@@ -1,13 +1,13 @@
-GRPS CNA v41 — SIDEBAR MICIP QA
+GRPS CNA v42 — FINAL MICIP PLACEMENT QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-MICIP connection under sidebar nav: PASS
-MICIP visual small: PASS
-MICIP removed from main Home: PASS
-Four data types remain primary: PASS
-Quick links retained: PASS
-Completed CNA example retained: PASS
-Runtime fix retained: PASS
-Stable storage migration retained: PASS
+No MICIP image in main Home: PASS
+Main Home data-URI images suppressed: PASS
+MICIP remains in dark-blue sidebar: PASS
+Sidebar MICIP is small: PASS
+Four data-type launcher retained: PASS
+Start CNA retained: PASS
+Completed CNA sample retained: PASS
+Stable save migration retained: PASS
 Back navigation retained: PASS
