@@ -1,14 +1,9 @@
-GRPS CNA v35 — MICIP FRAMEWORK + HOME LAYOUT QA
+GRPS CNA v36 — VISUAL MICIP HOME QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Sample CTA appears once: PASS
-Sample CTA moved below MICIP framework: PASS
-MICIP framework present: PASS
-MICIP Plan stage present: PASS
-Implement Monitor Evaluate present: PASS
-Official MDE MICIP resource link: PASS
-CNA-to-MICIP handoff clear: PASS
+Official MICIP visual embedded: PASS
+Old word-heavy framework removed: PASS
+Completed CNA example retained: PASS
 Runtime fix retained: PASS
-Completed sample retained: PASS
 Stable storage migration retained: PASS
