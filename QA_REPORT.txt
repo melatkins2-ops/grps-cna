@@ -1,8 +1,23 @@
-GRPS CNA v29 — Sidebar Contrast QA
+GRPS CNA v30 — Back Button + Full Static Functional QA
 
 JavaScript syntax: PASS
+No duplicate IDs: PASS
+No missing $() IDs: PASS
+No missing data-view targets: PASS
+All external links HTTPS: PASS
+In-app Back history: PASS
+Home fallback: PASS
+School selector refresh: PASS
+Local save: PASS
+Print function: PASS
+JSON download: PASS
+Exact attendance link: PASS
+Exact graduation link: PASS
+Exact enrollment link: PASS
+
 Duplicate IDs: none
-Active background white: PASS
-Active text dark: PASS
-Orange active marker: PASS
-Blue focus outline: PASS
+Missing $() IDs: none
+Missing data-view targets: none
+Non-HTTPS external links: none
+
+Note: This is static/code-level QA. Browser-level interaction on the deployed GitHub Pages site still requires live user/browser testing after upload.
