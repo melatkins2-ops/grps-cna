@@ -1,23 +1,22 @@
-GRPS CNA v30 — Back Button + Full Static Functional QA
+GRPS CNA v32 — PILOT READY QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-No missing $() IDs: PASS
-No missing data-view targets: PASS
-All external links HTTPS: PASS
-In-app Back history: PASS
-Home fallback: PASS
-School selector refresh: PASS
-Local save: PASS
-Print function: PASS
-JSON download: PASS
-Exact attendance link: PASS
-Exact graduation link: PASS
-Exact enrollment link: PASS
+No missing $() references: PASS
+No missing navigation targets: PASS
+Stable storage key present: PASS
+Legacy storage migration present: PASS
+Migration copies legacy data: PASS
+In-app Back navigation: PASS
+Enrollment exact report: PASS
+Attendance exact report: PASS
+GRPS AER source: PASS
+Print available: PASS
+JSON export available: PASS
+All 43 schools audited: PASS
 
-Duplicate IDs: none
-Missing $() IDs: none
-Missing data-view targets: none
-Non-HTTPS external links: none
+Schools audited: 43
+Enrollment verified/loaded: 22
+NWEA verified/loaded: 15
 
-Note: This is static/code-level QA. Browser-level interaction on the deployed GitHub Pages site still requires live user/browser testing after upload.
+No missing school values were estimated or replaced with district values. Missing values point users to school-level sources.
