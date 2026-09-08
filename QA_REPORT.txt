@@ -1,12 +1,12 @@
-GRPS CNA v38 — ACTION-FIRST HOME QA
+GRPS CNA v39 — CLEAR ACTION HOME QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Start Here appears before data launcher: PASS
-Four data type launcher remains: PASS
-MICIP moved below primary action: PASS
-MICIP visual reduced: PASS
-Completed CNA CTA remains at bottom: PASS
+All required Home IDs retained: PASS
+No Start Here box: PASS
+Four data types are primary action: PASS
+MICIP visual is small: PASS
+Completed CNA CTA at bottom: PASS
 Runtime fix retained: PASS
 Stable storage migration retained: PASS
 Back navigation retained: PASS
