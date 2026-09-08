@@ -1,9 +1,11 @@
-GRPS CNA v36 — VISUAL MICIP HOME QA
+GRPS CNA v37 — COMPACT MICIP HOME QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Official MICIP visual embedded: PASS
-Old word-heavy framework removed: PASS
-Completed CNA example retained: PASS
+MICIP graphic limited to 355px: PASS
+Orientation strip added: PASS
+Completed CNA sample retained: PASS
+Bottom CTA retained: PASS
 Runtime fix retained: PASS
 Stable storage migration retained: PASS
+Back navigation retained: PASS

@@ -638,56 +638,108 @@ textarea,input,select{max-width:100%}
 .micip-arrow{justify-content:center;transform:rotate(90deg)}}
 
 
-/* v36 MICIP visual-first home treatment */
+.micip-copy-card{padding:20px}
+  .micip-graphic-wrap{min-height:0}
+  .micip-graphic{width:min(100%,470px)}
+}
+
+
+/* v37 compact MICIP home treatment */
+.cna-orientation-strip{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border:1px solid #d8e4ec;
+  border-radius:12px;
+  overflow:hidden;
+  margin:14px 0 18px;
+  background:#fff;
+}
+.cna-orientation-item{
+  padding:14px 16px;
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  min-height:84px;
+}
+.cna-orientation-item:nth-child(1){background:#f1f7fc}
+.cna-orientation-item:nth-child(2){background:#f3f8f4}
+.cna-orientation-item:nth-child(3){background:#fff8ee}
+.cna-orientation-item + .cna-orientation-item{border-left:1px solid #dde6ec}
+.cna-orientation-icon{
+  font-size:1.35rem;
+  line-height:1;
+  margin-top:2px;
+}
+.cna-orientation-item b{
+  display:block;
+  color:#17324d;
+  margin-bottom:3px;
+  font-size:.98rem;
+}
+.cna-orientation-item span{
+  display:block;
+  color:#526b7d;
+  font-size:.88rem;
+  line-height:1.35;
+}
+
 .micip-visual-section{
   display:grid;
-  grid-template-columns:minmax(260px, .72fr) minmax(420px, 1.28fr);
-  gap:24px;
+  grid-template-columns:minmax(260px,.9fr) minmax(320px,1.1fr);
+  gap:18px;
   align-items:center;
-  margin:18px 0 24px;
+  margin:14px 0 20px;
+  padding:18px 20px;
+  border:1px solid #d5e2eb;
+  border-radius:14px;
+  background:#fff;
 }
 .micip-copy-card{
-  background:linear-gradient(180deg,#eef6fb,#f8fbfd);
-  border:1px solid #cfe0ec;
-  border-radius:14px;
-  padding:24px 26px;
+  background:transparent;
+  border:0;
+  padding:8px 10px 8px 4px;
 }
 .micip-copy-card h3{
-  margin:4px 0 12px;
+  margin:2px 0 10px;
   color:#17324d;
-  font-size:1.45rem;
-  line-height:1.28;
+  font-size:1.38rem;
+  line-height:1.23;
 }
 .micip-copy-card p{
-  margin:12px 0 18px;
-  font-size:1.02rem;
-  line-height:1.5;
+  margin:10px 0 15px;
+  font-size:.98rem;
+  line-height:1.45;
   color:#284861;
 }
+.micip-copy-card .btn{
+  display:inline-block;
+}
 .micip-accent{
-  width:88px;
+  width:82px;
   height:5px;
   border-radius:999px;
   background:#f5a623;
-  margin:14px 0 18px;
+  margin:12px 0 16px;
 }
 .micip-graphic-wrap{
   display:flex;
   justify-content:center;
   align-items:center;
-  min-height:390px;
+  min-height:0;
 }
 .micip-graphic{
-  width:min(100%,520px);
+  width:min(100%,355px);
+  max-height:355px;
   height:auto;
   display:block;
   object-fit:contain;
 }
 @media(max-width:900px){
-  .micip-visual-section{grid-template-columns:1fr}
-  .micip-copy-card{padding:20px}
-  .micip-graphic-wrap{min-height:0}
-  .micip-graphic{width:min(100%,470px)}
+  .cna-orientation-strip{grid-template-columns:1fr}
+  .cna-orientation-item + .cna-orientation-item{border-left:0;border-top:1px solid #dde6ec}
+  .micip-visual-section{grid-template-columns:1fr;padding:16px}
+  .micip-copy-card{padding:4px}
+  .micip-graphic{width:min(100%,320px);max-height:320px}
 }
 
 </style>
@@ -709,7 +761,7 @@ textarea,input,select{max-width:100%}
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v36</span></div></div>
+      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v37</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
@@ -771,6 +823,21 @@ textarea,input,select{max-width:100%}
               <h2>What does your school need?</h2>
               <p>Start with the evidence. Review each of the four data types and capture only the patterns that matter.</p>
 
+
+<div class="cna-orientation-strip">
+  <div class="cna-orientation-item">
+    <div class="cna-orientation-icon">●</div>
+    <div><b>Use Multiple Data Sources</b><span>Look at the full picture.</span></div>
+  </div>
+  <div class="cna-orientation-item">
+    <div class="cna-orientation-icon">▥</div>
+    <div><b>Identify & Prioritize Needs</b><span>Focus on what matters most for scholars.</span></div>
+  </div>
+  <div class="cna-orientation-item">
+    <div class="cna-orientation-icon">⚙</div>
+    <div><b>Inform Next Steps</b><span>Your CNA leads into MICIP planning.</span></div>
+  </div>
+</div>
 <div class="micip-visual-section">
   <div class="micip-copy-card">
     <div class="sample-tag">MICIP CONNECTION</div>
@@ -818,7 +885,7 @@ textarea,input,select{max-width:100%}
               <div id="schoolPublicData"></div>
             </div>
           </div>
-        <div class="sample-banner"><b>Before you finish, want to see the quality bar?</b> Review a complete, high-quality example showing the evidence synthesis, school needs, root causes, priorities, and final CNA story. <button class="secondary" style="margin-left:8px" onclick="show('sample')">See a completed CNA →</button></div>
+        <div class="sample-banner" style="padding:14px 18px"><b>Want to see the finished product first?</b> Review a complete, high-quality example showing the evidence synthesis, school needs, root causes, priorities, and final CNA story. <button class="secondary" style="margin-left:8px" onclick="show('sample')">See a completed CNA →</button></div>
 </div>
 
         <div id="dataType" class="view panel">
