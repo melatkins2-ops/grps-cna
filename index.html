@@ -653,7 +653,7 @@ textarea,input,select{max-width:100%}
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v33</span></div></div>
+      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v34</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
@@ -1053,6 +1053,14 @@ function sourceConfidenceLabel(d){
   return '<span class="data-chip">Roster verified</span>';
 }
 
+
+
+function dataCompleteness(name){
+  const d=SCHOOL_DATA[name]||{};
+  const possible=['support','enrollment','nwea','chronic_absence'];
+  const loaded=possible.filter(k=>!!d[k]).length;
+  return {loaded,total:possible.length,pct:Math.round(loaded/possible.length*100)};
+}
 
 function metricAvailabilityLabel(kind, school, datum){
   if(datum) return '';

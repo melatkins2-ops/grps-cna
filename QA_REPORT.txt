@@ -1,16 +1,15 @@
-GRPS CNA v33 — COMPLETED CNA EXEMPLAR QA
+GRPS CNA v34 — RUNTIME FIX QA
 
 JavaScript syntax: PASS
+dataCompleteness defined: PASS
+dataCompleteness call retained: PASS
 No duplicate IDs: PASS
-Sample navigation target exists: PASS
-Sidebar sample link: PASS
-Home sample CTA: PASS
-Four data types in exemplar: PASS
-Needs included: PASS
-Two priorities included: PASS
-CNA Story included: PASS
-Illustrative-data warning: PASS
+Completed CNA sample present: PASS
+Sample sidebar link present: PASS
+School starting point renderer present: PASS
 Stable storage migration retained: PASS
-Back navigation retained: PASS
+In-app Back navigation retained: PASS
+Print retained: PASS
+JSON export retained: PASS
 
-The exemplar is intentionally illustrative and is not presented as verified results for an actual GRPS school.
+Fix applied: restored dataCompleteness(), which the school starting-point renderer calls when a school is selected.
