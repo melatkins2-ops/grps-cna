@@ -621,6 +621,19 @@ textarea,input,select{max-width:100%}
   body{padding-bottom:70px}
 }
 
+
+/* v33 completed CNA exemplar */
+.sample-banner{background:#eef6fb;border:1px solid #b9d4e6;border-left:6px solid #1f6f9f;border-radius:12px;padding:16px 18px;margin:14px 0}
+.sample-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
+.sample-card{border:1px solid #d9e3ea;border-radius:12px;padding:15px;background:#fff}
+.sample-card h3{margin:0 0 8px;color:#17324d}
+.sample-evidence{font-size:.94rem;color:#455d70}
+.sample-priority{border-left:5px solid #3f8064;background:#f2f8f5}
+.sample-story{border-left:5px solid #c79b33;background:#fff9e9}
+.sample-tag{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:#e9f1f6;color:#31566f;border-radius:999px;padding:4px 8px;margin-bottom:6px}
+.sample-warning{font-size:.9rem;color:#5b6670}
+@media(max-width:760px){.sample-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -634,13 +647,13 @@ textarea,input,select{max-width:100%}
       <button data-view="why"><span class="num">3</span>Understand Why the Need Exists</button>
       <button data-view="priorities"><span class="num">4</span>Set Priorities</button>
       <button data-view="story"><span class="num">5</span>Your CNA Story</button>
-    </div>
+    <button data-view="sample"><span class="num">★</span>Completed CNA Example</button></div>
     <div class="sidebar-note">Keep the CNA focused on decisions.<br><br><b>Notice → Understand → Prioritize.</b></div>
   </aside>
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v32</span></div></div>
+      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v33</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
@@ -700,7 +713,7 @@ textarea,input,select{max-width:100%}
             <div class="landing-copy">
               <div class="kicker">GRPS Comprehensive Needs Assessment</div>
               <h2>What does your school need?</h2>
-              <p>Start with the evidence. Review each of the four data types and capture only the patterns that matter.</p>
+              <p>Start with the evidence. Review each of the four data types and capture only the patterns that matter.</p><div class="sample-banner"><b>Want to see the finished product first?</b> Review a complete, high-quality example showing the evidence synthesis, school needs, root causes, priorities, and final CNA story. <button class="secondary" style="margin-left:8px" onclick="show('sample')">See a completed CNA →</button></div>
             </div>
 
             <div id="homeReadiness" class="landing-progress"></div>
@@ -781,7 +794,76 @@ textarea,input,select{max-width:100%}
         <div id="priorities" class="view panel"><div class="kicker">Decide</div><h2>Set Priorities</h2><p class="section-help">Select 2–4 needs. Use four tests: Is the pattern persistent? Is scholar impact meaningful? Do we understand enough about why it is happening? Would addressing it materially improve outcomes?</p><div class="insight"><b>Before selecting a priority:</b> the domain should be reviewed using at least two evidence types. The final CNA should normally carry only the few needs the school is prepared to address and monitor.</div><div id="priorityList"></div><div class="actions"><span></span><button class="primary" data-next="story">Build My CNA Story →</button></div></div>
 
         <div id="story" class="view panel"><div class="kicker">Synthesize</div><h2>Your CNA Story</h2><p class="section-help">This is the concise record of what your team learned and what should move forward into MICIP and school improvement planning.</p><div id="storyBody"></div><div class="actions"><button class="secondary" id="printBtn">Print / Save PDF</button><button class="primary" id="downloadBtn">Download CNA Data</button></div></div>
-      </section>
+      
+<div id="sample" class="view panel">
+  <div class="kicker">MODEL EXAMPLE</div>
+  <h2>What a strong completed CNA looks like</h2>
+  <div class="sample-banner">
+    <div class="sample-tag">Illustrative example — not actual school results</div>
+    <h3 style="margin:3px 0 7px">Sample GRPS Middle School | 2026–27 CNA</h3>
+    <p style="margin:0">This example models the level of evidence, analysis, prioritization, and writing expected in a high-quality CNA. The numbers and findings below are intentionally illustrative. Schools should replace them with their own verified evidence.</p>
+  </div>
+
+  <h3>1. What the team learned from the four data types</h3>
+  <div class="sample-grid">
+    <div class="sample-card"><div class="sample-tag">Demographic Data</div><h3>Attendance is the clearest access issue.</h3><p class="sample-evidence"><b>Evidence reviewed:</b> enrollment and subgroup trends, chronic absence, mobility, attendance by grade, special-population rosters.</p><p>Chronic absence is 41%, with the highest rates in grades 7–8. Scholars with high mobility and scholars receiving intensive supports are overrepresented. The pattern begins early in the year rather than appearing only after winter.</p></div>
+    <div class="sample-card"><div class="sample-tag">Achievement / Outcome Data</div><h3>Literacy performance is uneven and closely connected to attendance.</h3><p class="sample-evidence"><b>Evidence reviewed:</b> NWEA reading, M-STEP ELA, course performance, common assessments, MTSS progress monitoring.</p><p>Reading growth is strongest among scholars with consistent attendance. Grade 7 informational-text performance and written response are recurring weaknesses across state, benchmark, and classroom evidence. Scholars missing 10% or more instructional days show substantially lower course success.</p></div>
+    <div class="sample-card"><div class="sample-tag">Process Data</div><h3>Strong practices exist, but implementation is inconsistent.</h3><p class="sample-evidence"><b>Evidence reviewed:</b> PLC agendas, intervention rosters, attendance-team records, walkthroughs, family-contact logs, master schedule.</p><p>Teams have common assessments and an attendance response process, but use varies by grade and team. Early attendance signals do not consistently lead to documented barrier identification. Intervention entry criteria are clearer than progress-monitoring and exit criteria.</p></div>
+    <div class="sample-card"><div class="sample-tag">Perception Data</div><h3>Relationships are a strength; belonging and communication are less consistent.</h3><p class="sample-evidence"><b>Evidence reviewed:</b> scholar voice, family feedback, staff survey, focus groups, counseling themes.</p><p>Most scholars identify at least one trusted adult, a significant strength. However, grade 8 scholars report weaker belonging and academic confidence. Families value staff responsiveness but describe attendance and academic communications as more reactive than preventive.</p></div>
+  </div>
+
+  <div class="sample-card">
+    <div class="sample-tag">Cross-data synthesis</div>
+    <h3>The data point to two connected needs—not four separate problems.</h3>
+    <p>Across demographic, outcome, process, and perception evidence, two patterns repeat: <b>(1) inconsistent attendance reduces access to instruction, particularly for scholars already experiencing barriers; and (2) literacy support is not consistently delivered and monitored across classrooms and intervention settings.</b> The team did not elevate every weakness to a priority. It selected needs that appeared across multiple sources, had clear scholar impact, and had causes the school could influence.</p>
+  </div>
+
+  <h3 style="margin-top:24px">2. School needs and root causes</h3>
+  <div class="sample-grid">
+    <div class="sample-card">
+      <div class="sample-tag">Need 1 — Attendance & Belonging</div>
+      <p><b>Who is most affected:</b> Scholars with emerging attendance concerns, especially grades 7–8 and scholars experiencing mobility or recurring family/transportation barriers.</p>
+      <p><b>Desired state:</b> Attendance concerns are identified early; barriers are documented; scholars and families receive timely, matched support before chronic absence develops.</p>
+      <p><b>Current-to-desired gap:</b> Chronic absence is 41%, and team records show inconsistent follow-through after early warning signs.</p>
+      <p><b>School need:</b> The school needs a consistent early-warning and barrier-response system that connects attendance data, scholar/family voice, and matched interventions before absence becomes chronic.</p>
+      <p><b>Root cause:</b> Attendance routines emphasize notification and case response after absences accumulate; ownership, barrier documentation, and follow-up expectations are not consistently defined across teams.</p>
+      <p><b>Root-cause evidence:</b> attendance-team records, contact logs, staff interviews, family feedback, intervention documentation.</p>
+    </div>
+    <div class="sample-card">
+      <div class="sample-tag">Need 2 — Literacy</div>
+      <p><b>Who is most affected:</b> Scholars below benchmark in reading, particularly those with inconsistent attendance and scholars not demonstrating growth after initial intervention.</p>
+      <p><b>Desired state:</b> All scholars receive grade-level literacy instruction plus timely, evidence-based support with common progress-monitoring expectations.</p>
+      <p><b>Current-to-desired gap:</b> Multiple measures show persistent weakness in informational-text comprehension and written response; intervention response varies across teams.</p>
+      <p><b>School need:</b> The school needs consistent implementation and progress monitoring of high-leverage literacy practices across core instruction and intervention.</p>
+      <p><b>Root cause:</b> PLC and intervention structures identify scholars who need support, but the school lacks a consistently used instructional response and common progress-monitoring cycle tied to the identified literacy skills.</p>
+      <p><b>Root-cause evidence:</b> common-assessment analysis, walkthroughs, PLC artifacts, intervention plans, progress-monitoring records, scholar work.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:24px">3. Final priorities</h3>
+  <div class="sample-grid">
+    <div class="sample-card sample-priority"><div class="sample-tag">Priority 1</div><h3>Early Attendance & Belonging Response</h3><p><b>Priority statement:</b> Establish a consistent schoolwide early-warning and barrier-response system so emerging attendance concerns trigger timely relationship-based outreach, barrier identification, and matched support.</p><p><b>Why this rises to priority:</b> It affects access to every other improvement effort, appears across all four data types, disproportionately affects identifiable groups, and has school-influenceable causes.</p><p><b>Measures to watch:</b> chronic absence; percentage of scholars moving from emerging to chronic absence; attendance by grade/subgroup; time from signal to outreach; documented barrier resolution; scholar belonging.</p></div>
+    <div class="sample-card sample-priority"><div class="sample-tag">Priority 2</div><h3>Consistent Literacy Instruction & Intervention</h3><p><b>Priority statement:</b> Strengthen consistent use of high-leverage literacy practices and a common progress-monitoring cycle across core instruction and intervention, with emphasis on informational text and evidence-based written response.</p><p><b>Why this rises to priority:</b> The need is visible in state, benchmark, classroom, and process evidence and is linked to an implementation gap the school can address.</p><p><b>Measures to watch:</b> NWEA growth; M-STEP ELA; common-assessment mastery; intervention response; course success; walkthrough evidence of agreed literacy practices.</p></div>
+  </div>
+
+  <h3 style="margin-top:24px">4. Completed CNA Story</h3>
+  <div class="sample-card sample-story">
+    <div class="sample-tag">Executive-quality data story</div>
+    <p><b>Our strengths.</b> The school has a strong relational foundation. Most scholars report having a trusted adult, staff demonstrate commitment to scholars, and teams already use common assessments and intervention structures. These are assets to build on rather than systems to replace.</p>
+    <p><b>What the evidence says.</b> The most consequential pattern is inconsistent access to instruction. Chronic absence is high and is concentrated among specific groups and grade levels. At the same time, literacy evidence shows recurring difficulty with informational text and written response. Scholars with inconsistent attendance experience weaker academic outcomes, but attendance alone does not explain the literacy pattern.</p>
+    <p><b>What our school needs.</b> The school needs two things: a reliable early attendance and barrier-response system, and more consistent literacy instruction and progress monitoring across core and intervention settings. These needs are supported by multiple sources rather than a single test, survey, or anecdote.</p>
+    <p><b>Why the needs exist.</b> Current systems identify concerns, but implementation is not sufficiently consistent. Attendance response often intensifies after absences accumulate, while literacy teams vary in the instructional response and progress-monitoring cycle used after a need is identified. These are conditions the school can influence.</p>
+    <p><b>What moves forward.</b> The CNA therefore identifies two priorities for improvement planning: <b>Early Attendance & Belonging Response</b> and <b>Consistent Literacy Instruction & Intervention</b>. The next MICIP step is not to add disconnected programs. It is to examine current initiatives, determine what should be strengthened, adjusted, or stopped, and select evidence-based strategies that directly address these root causes.</p>
+  </div>
+
+  <div class="sample-banner">
+    <h3 style="margin:0 0 7px">Why this is a strong CNA</h3>
+    <p style="margin:0">It uses all four data types, names strengths, triangulates evidence, narrows the work to a few needs, separates needs from strategies, tests root causes with evidence, identifies influenceable conditions, and carries only the highest-leverage priorities into planning. It is concise enough to guide decisions without becoming a data dump.</p>
+  </div>
+  <div class="actions"><button class="secondary" onclick="show('home')">← Back to Home</button><button class="primary" onclick="show('needs')">Continue to My CNA →</button></div>
+</div>
+
+</section>
 
       <aside class="sidecol">
         <div class="panel"><h3>Your Progress</h3><div class="small"><span id="doneCount">0</span> of 7 domains explored</div><div class="progressbar"><div id="bar"></div></div></div>

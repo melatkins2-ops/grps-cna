@@ -1,22 +1,16 @@
-GRPS CNA v32 — PILOT READY QA
+GRPS CNA v33 — COMPLETED CNA EXEMPLAR QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-No missing $() references: PASS
-No missing navigation targets: PASS
-Stable storage key present: PASS
-Legacy storage migration present: PASS
-Migration copies legacy data: PASS
-In-app Back navigation: PASS
-Enrollment exact report: PASS
-Attendance exact report: PASS
-GRPS AER source: PASS
-Print available: PASS
-JSON export available: PASS
-All 43 schools audited: PASS
+Sample navigation target exists: PASS
+Sidebar sample link: PASS
+Home sample CTA: PASS
+Four data types in exemplar: PASS
+Needs included: PASS
+Two priorities included: PASS
+CNA Story included: PASS
+Illustrative-data warning: PASS
+Stable storage migration retained: PASS
+Back navigation retained: PASS
 
-Schools audited: 43
-Enrollment verified/loaded: 22
-NWEA verified/loaded: 15
-
-No missing school values were estimated or replaced with district values. Missing values point users to school-level sources.
+The exemplar is intentionally illustrative and is not presented as verified results for an actual GRPS school.
