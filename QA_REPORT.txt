@@ -1,0 +1,8 @@
+GRPS CNA v29 — Sidebar Contrast QA
+
+JavaScript syntax: PASS
+Duplicate IDs: none
+Active background white: PASS
+Active text dark: PASS
+Orange active marker: PASS
+Blue focus outline: PASS
