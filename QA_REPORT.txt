@@ -1,11 +1,12 @@
-GRPS CNA v37 — COMPACT MICIP HOME QA
+GRPS CNA v38 — ACTION-FIRST HOME QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-MICIP graphic limited to 355px: PASS
-Orientation strip added: PASS
-Completed CNA sample retained: PASS
-Bottom CTA retained: PASS
+Start Here appears before data launcher: PASS
+Four data type launcher remains: PASS
+MICIP moved below primary action: PASS
+MICIP visual reduced: PASS
+Completed CNA CTA remains at bottom: PASS
 Runtime fix retained: PASS
 Stable storage migration retained: PASS
 Back navigation retained: PASS
