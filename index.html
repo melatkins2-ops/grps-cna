@@ -732,6 +732,83 @@ textarea,input,select{max-width:100%}
   .home-sample-cta button{width:100%;margin-top:12px}
 }
 
+
+/* v40 compact school-data quick links */
+.school-data-quicklinks{
+  margin:14px 0 18px;
+  padding:18px;
+  border:1px solid #d7e3ec;
+  border-radius:14px;
+  background:#fff;
+  text-align:center;
+}
+.school-data-quicklinks h3{
+  margin:5px 0 4px;
+  color:#17324d;
+  font-size:1.28rem;
+}
+.school-data-quicklinks > p{
+  margin:0 0 14px;
+  color:#607789;
+  font-size:.94rem;
+}
+.school-data-linkgrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.school-data-link{
+  text-decoration:none;
+  display:grid;
+  grid-template-columns:54px 1fr 34px;
+  gap:12px;
+  align-items:center;
+  text-align:left;
+  border:1px solid #d8e4ec;
+  border-radius:12px;
+  padding:14px 16px;
+  background:#fff;
+}
+.school-data-link:hover{
+  transform:translateY(-1px);
+  box-shadow:0 5px 14px rgba(26,61,86,.08);
+}
+.school-data-link b{
+  display:block;
+  color:#17324d;
+  font-size:1rem;
+  margin-bottom:2px;
+}
+.school-data-link span{
+  color:#607789;
+  font-size:.86rem;
+}
+.school-data-link-icon{
+  font-size:1.15rem;
+  font-weight:900;
+  text-align:center;
+}
+.enrollment-link{
+  background:#f4f9fd;
+  border-color:#bdd9ee;
+}
+.enrollment-link .school-data-link-icon,
+.enrollment-link .school-data-arrow{color:#147fc1}
+.aer-link{
+  background:#fff9f1;
+  border-color:#f2d3ac;
+}
+.aer-link .school-data-link-icon,
+.aer-link .school-data-arrow{color:#ef7d00}
+.school-data-arrow{
+  font-size:1.45rem !important;
+  font-weight:900;
+  text-align:right;
+}
+@media(max-width:760px){
+  .school-data-linkgrid{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -751,7 +828,7 @@ textarea,input,select{max-width:100%}
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v39</span></div></div>
+      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v40</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
@@ -1107,44 +1184,31 @@ function renderSchoolStartingPoint(){
       ${metric('Federal Support Status',d.support?.value||null,d.support?`${d.support.year}`:'Not loaded')}
       ${metric('NWEA Reading',r,d.nwea?`${d.nwea.year} · range across reported grades`:'School-level result has not yet been verified for this CNA')}
     </div>
-    <div class="school-start-meaning"><b>What this means for your CNA:</b> ${escapeHtml(schoolStartMeaning(name,d,meta))}</div>
-    ${d.note?`<div class="school-start-meaning" style="border-top:1px solid var(--line)"><b>Source note:</b> ${escapeHtml(d.note)}</div>
-<div class="callout" style="margin-top:12px">
-  <strong>About missing school data</strong>
-  <div class="small" style="margin-top:5px">
-    <b>Not yet loaded</b> means the measure is expected to exist but has not been verified and embedded in this CNA.
-    <b>Not publicly available</b> means the school may have the information internally, but a comparable verified public value is not available for preloading.
-    The CNA never substitutes a district value for a missing school value.
+    
+<div class="school-data-quicklinks">
+  <div class="sample-tag">QUICK LINKS</div>
+  <h3>Need additional school data?</h3>
+  <p>Use these school-level sources.</p>
+  <div class="school-data-linkgrid">
+    <a class="school-data-link enrollment-link" href="https://www.mischooldata.org/student-enrollment-counts-report/" target="_blank" rel="noopener">
+      <div class="school-data-link-icon">●●●</div>
+      <div>
+        <b>Student Enrollment Counts</b>
+        <span>Current school enrollment data</span>
+      </div>
+      <span class="school-data-arrow">→</span>
+    </a>
+    <a class="school-data-link aer-link" href="https://grps.org/our-district/transparency/annual-reports/" target="_blank" rel="noopener">
+      <div class="school-data-link-icon">▥</div>
+      <div>
+        <b>GRPS School Annual Reports</b>
+        <span>School performance and accountability data</span>
+      </div>
+      <span class="school-data-arrow">→</span>
+    </a>
   </div>
 </div>
-<div class="callout" id="dataGapActions" style="margin-top:12px">
-  <strong>When a school value is missing</strong>
-  <div class="small" style="margin-top:5px">
-    The CNA does not estimate the value or substitute a district result. Use the school-level source below, then add current local evidence where needed.
-  </div>
-  <div class="actions" style="margin-top:9px;display:flex;gap:8px;flex-wrap:wrap">
-    <a class="btn secondary" target="_blank" rel="noopener" href="https://www.mischooldata.org/student-enrollment-counts-report/">Student Enrollment Counts ↗</a>
-    <a class="btn secondary" target="_blank" rel="noopener" href="https://grps.org/our-district/transparency/annual-reports/">GRPS School Annual Reports ↗</a>
-  </div>
-</div>
-
-`:''}
-  </div>`;
-}
-function renderSelectedSchoolContext(){
-  const box=$('selectedSchoolContext'); if(!box)return;
-  const name=$('schoolSelect')?.value||'';
-  if(!name){box.innerHTML='<b>No school selected.</b> Select a school to load school-specific context.';return}
-  const meta=SCHOOL_META[name]||{}, d=SCHOOL_DATA[name]||{};
-  const bits=[];
-  if(d.enrollment)bits.push(`<span><b>Enrollment:</b> ${escapeHtml(d.enrollment.value)}</span>`);
-  if(d.chronic_absence)bits.push(`<span><b>Chronic absence:</b> ${escapeHtml(d.chronic_absence.value)}</span>`);
-  if(d.support)bits.push(`<span><b>Support:</b> ${escapeHtml(d.support.value)}</span>`);
-  if(d.nwea){
-    const rmin=Math.min(...d.nwea.reading),rmax=Math.max(...d.nwea.reading);
-    bits.push(`<span><b>NWEA Reading:</b> ${rmin===rmax?rmin+'%':rmin+'–'+rmax+'%'}</span>`);
-  }
-  box.innerHTML=`<b>${escapeHtml(name)}</b> · ${escapeHtml(meta.grades||'')}<div class="context-data">${bits.join('')||'<span>No verified numeric indicators preloaded.</span>'}</div>`;
+`;
 }
 
 function renderCards(){

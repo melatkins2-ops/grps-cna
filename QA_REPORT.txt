@@ -1,12 +1,11 @@
-GRPS CNA v39 — CLEAR ACTION HOME QA
+GRPS CNA v40 — COMPACT SCHOOL DATA LINKS QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-All required Home IDs retained: PASS
-No Start Here box: PASS
-Four data types are primary action: PASS
-MICIP visual is small: PASS
-Completed CNA CTA at bottom: PASS
+Long missing-data headings removed: PASS
+Quick Links section present: PASS
+Enrollment link retained: PASS
+GRPS AER link retained: PASS
 Runtime fix retained: PASS
 Stable storage migration retained: PASS
-Back navigation retained: PASS
+Completed CNA sample retained: PASS
