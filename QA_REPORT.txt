@@ -1,15 +1,14 @@
-GRPS CNA v34 — RUNTIME FIX QA
+GRPS CNA v35 — MICIP FRAMEWORK + HOME LAYOUT QA
 
 JavaScript syntax: PASS
-dataCompleteness defined: PASS
-dataCompleteness call retained: PASS
 No duplicate IDs: PASS
-Completed CNA sample present: PASS
-Sample sidebar link present: PASS
-School starting point renderer present: PASS
+Sample CTA appears once: PASS
+Sample CTA moved below MICIP framework: PASS
+MICIP framework present: PASS
+MICIP Plan stage present: PASS
+Implement Monitor Evaluate present: PASS
+Official MDE MICIP resource link: PASS
+CNA-to-MICIP handoff clear: PASS
+Runtime fix retained: PASS
+Completed sample retained: PASS
 Stable storage migration retained: PASS
-In-app Back navigation retained: PASS
-Print retained: PASS
-JSON export retained: PASS
-
-Fix applied: restored dataCompleteness(), which the school starting-point renderer calls when a school is selected.

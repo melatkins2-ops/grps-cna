@@ -634,6 +634,21 @@ textarea,input,select{max-width:100%}
 .sample-warning{font-size:.9rem;color:#5b6670}
 @media(max-width:760px){.sample-grid{grid-template-columns:1fr}}
 
+
+/* v35 MICIP framework */
+.micip-framework{margin:18px 0;border:1px solid #cbdce8;border-radius:14px;background:#fff;overflow:hidden}
+.micip-head{padding:16px 18px;background:#edf5fa;border-bottom:1px solid #cbdce8}
+.micip-head h3{margin:0 0 5px;color:#17324d}
+.micip-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:8px;padding:16px}
+.micip-stage{border-radius:11px;padding:14px;border:1px solid #d8e3ea}
+.micip-stage b{display:block;color:#17324d;margin-bottom:5px}
+.micip-stage.current{background:#eef6fb;border-left:5px solid #1f6f9f}
+.micip-stage.next{background:#f4f8f5;border-left:5px solid #3f8064}
+.micip-stage.later{background:#fff9e9;border-left:5px solid #c79b33}
+.micip-arrow{display:flex;align-items:center;font-weight:900;color:#66849a;font-size:1.35rem}
+.micip-foot{padding:0 16px 16px;font-size:.91rem;color:#526b7d}
+@media(max-width:760px){.micip-flow{grid-template-columns:1fr}.micip-arrow{justify-content:center;transform:rotate(90deg)}}
+
 </style>
 </head>
 <body>
@@ -653,7 +668,7 @@ textarea,input,select{max-width:100%}
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v34</span></div></div>
+      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v35</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
@@ -713,7 +728,26 @@ textarea,input,select{max-width:100%}
             <div class="landing-copy">
               <div class="kicker">GRPS Comprehensive Needs Assessment</div>
               <h2>What does your school need?</h2>
-              <p>Start with the evidence. Review each of the four data types and capture only the patterns that matter.</p><div class="sample-banner"><b>Want to see the finished product first?</b> Review a complete, high-quality example showing the evidence synthesis, school needs, root causes, priorities, and final CNA story. <button class="secondary" style="margin-left:8px" onclick="show('sample')">See a completed CNA →</button></div>
+              <p>Start with the evidence. Review each of the four data types and capture only the patterns that matter.</p>
+<div class="micip-framework">
+  <div class="micip-head">
+    <div class="sample-tag">Where this CNA fits</div>
+    <h3>MICIP Continuous Improvement Framework</h3>
+    <div class="small">The CNA completes the <b>Assess Needs</b> portion of MICIP and creates the evidence base for planning.</div>
+  </div>
+  <div class="micip-flow">
+    <div class="micip-stage current"><b>1. Assess Needs — You are here</b>Identify areas of inquiry → review whole-child data → write the data story → analyze root cause → identify the challenge/priority.</div>
+    <div class="micip-arrow">→</div>
+    <div class="micip-stage next"><b>2. Plan</b>Define measurable goals and targets → select evidence-based strategies → identify activities, funding, and communication.</div>
+    <div class="micip-arrow">→</div>
+    <div class="micip-stage later"><b>3. Implement, Monitor & Evaluate</b>Implement the plan → monitor implementation and impact → adjust as needed → evaluate the goal.</div>
+  </div>
+  <div class="micip-foot">
+    <b>CNA handoff:</b> The priorities and CNA Story produced here should carry forward into MICIP planning; this tool intentionally stops before strategy selection.
+    <a href="https://www.michigan.gov/mde/services/school-performance-supports/micip/micip-resources" target="_blank" rel="noopener">MDE MICIP Resources ↗</a>
+  </div>
+</div>
+
             </div>
 
             <div id="homeReadiness" class="landing-progress"></div>
@@ -737,7 +771,8 @@ textarea,input,select{max-width:100%}
               <div id="schoolPublicData"></div>
             </div>
           </div>
-        </div>
+        <div class="sample-banner"><b>Before you finish, want to see the quality bar?</b> Review a complete, high-quality example showing the evidence synthesis, school needs, root causes, priorities, and final CNA story. <button class="secondary" style="margin-left:8px" onclick="show('sample')">See a completed CNA →</button></div>
+</div>
 
         <div id="dataType" class="view panel">
           <button class="back-link" type="button" onclick="show('home')">← Four Types of Data</button>
@@ -793,7 +828,7 @@ textarea,input,select{max-width:100%}
 
         <div id="priorities" class="view panel"><div class="kicker">Decide</div><h2>Set Priorities</h2><p class="section-help">Select 2–4 needs. Use four tests: Is the pattern persistent? Is scholar impact meaningful? Do we understand enough about why it is happening? Would addressing it materially improve outcomes?</p><div class="insight"><b>Before selecting a priority:</b> the domain should be reviewed using at least two evidence types. The final CNA should normally carry only the few needs the school is prepared to address and monitor.</div><div id="priorityList"></div><div class="actions"><span></span><button class="primary" data-next="story">Build My CNA Story →</button></div></div>
 
-        <div id="story" class="view panel"><div class="kicker">Synthesize</div><h2>Your CNA Story</h2><p class="section-help">This is the concise record of what your team learned and what should move forward into MICIP and school improvement planning.</p><div id="storyBody"></div><div class="actions"><button class="secondary" id="printBtn">Print / Save PDF</button><button class="primary" id="downloadBtn">Download CNA Data</button></div></div>
+        <div id="story" class="view panel"><div class="kicker">Synthesize</div><h2>Your CNA Story</h2><p class="section-help">This is the concise record of what your team learned and what should move forward into MICIP and school improvement planning.</p><div class="research-strip"><b>From CNA to MICIP:</b> Your final priorities and data story complete the needs-assessment foundation. Strategy selection, measurable goals, activities, implementation, monitoring, and evaluation follow in the MICIP continuous improvement process. <a href="https://www.michigan.gov/mde/services/school-performance-supports/micip/micip-resources" target="_blank" rel="noopener">MICIP Resources ↗</a></div><div id="storyBody"></div><div class="actions"><button class="secondary" id="printBtn">Print / Save PDF</button><button class="primary" id="downloadBtn">Download CNA Data</button></div></div>
       
 <div id="sample" class="view panel">
   <div class="kicker">MODEL EXAMPLE</div>
