@@ -1,17 +1,22 @@
-GRPS Title I Plan v46 QA
-============================
-PASS — JavaScript syntax
-PASS — v46 stamp
-PASS — 9 requirements
-PASS — no duplicate ids
-PASS — nav targets
-PASS — CNA priority carry-forward
-PASS — Requirement 1 readiness
-PASS — Title I program type
-PASS — Requirement 8 MDE link
-PASS — Requirement 8 GRPS compact link
-PASS — autosave
-PASS — HTTPS links
+GRPS Title I Plan v48 — SMART CONNECTIONS QA
 
-Duplicate IDs: []
-Missing nav targets: []
+JavaScript syntax: PASS
+No duplicate IDs: PASS
+Smart Connections view exists: PASS
+Compliance Crosswalk exists: PASS
+Priority analysis uses CNA need/domain/root cause: PASS
+Academic mapping to Req 2: PASS
+High-need/monitoring mapping to Req 3: PASS
+Services mapping to Req 4: PASS
+Coordination mapping to Req 5: PASS
+Staff mapping to Req 6: PASS
+Professional learning mapping to Req 7: PASS
+Family engagement mapping to Req 8: PASS
+Annual review mapping to Req 9: PASS
+Requirement pages use smart carry-forward: PASS
+Requirement 8 exact MDE plan link retained: PASS
+Requirement 8 compact sample retained: PASS
+Final plan links to crosswalk: PASS
+Existing CNA saved-work migration retained: PASS
+
+Smart Connections are deterministic planning recommendations based on the CNA priority text, affected scholars, gap, domain, focus, root cause, and current efforts. They do not auto-certify compliance.
