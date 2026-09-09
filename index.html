@@ -830,6 +830,38 @@ textarea,input,select{max-width:100%}
   display:none !important;
 }
 
+
+/* v43 clickable data-type cards; redundant Start CNA removed */
+.data-type-tile{
+  outline:none;
+}
+.data-type-tile:hover,
+.data-type-tile:focus-visible{
+  transform:translateY(-2px);
+  box-shadow:0 10px 26px rgba(29,66,96,.12);
+  border-color:#2479a8;
+}
+.data-type-tile:focus-visible{
+  box-shadow:0 0 0 3px rgba(36,121,168,.18),0 10px 26px rgba(29,66,96,.12);
+}
+.data-type-tile:hover .launch-arrow,
+.data-type-tile:focus-visible .launch-arrow{
+  transform:translateX(3px);
+  background:#2479a8;
+}
+.data-type-tile .launch-arrow{
+  transition:transform .15s ease,background .15s ease;
+}
+.simplified-footer{
+  justify-content:flex-start;
+}
+.simplified-footer span{
+  font-size:12px;
+}
+#resumeButton[aria-hidden="true"]{
+  display:none !important;
+}
+
 </style>
 </head>
 <body>
@@ -857,7 +889,7 @@ textarea,input,select{max-width:100%}
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v42</span></div></div>
+      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v43</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
@@ -929,9 +961,8 @@ textarea,input,select{max-width:100%}
       </div>
       <div id="domainCards" class="data-type-launcher"></div>
 
-      <div class="landing-footer">
-        <span>Your work saves automatically.</span>
-        <button class="primary" id="resumeButton">Start CNA →</button>
+      <div class="landing-footer simplified-footer">
+        <span>Your work saves automatically. Select any data type above to begin.</span>
       </div>
 </div>
 
@@ -945,7 +976,7 @@ textarea,input,select{max-width:100%}
 
       <div class="sr-only">
         <span id="resumeTitle">Ready to begin?</span>
-        <span id="resumeText">Start with a data type.</span>
+        <span id="resumeText">Start with a data type.</span><button id="resumeButton" type="button" tabindex="-1" aria-hidden="true">Continue</button>
       </div>
       <div class="sr-only" aria-hidden="true">
         <span id="schoolDataToggleText"></span>

@@ -1,13 +1,13 @@
-GRPS CNA v42 — FINAL MICIP PLACEMENT QA
+GRPS CNA v43 — CLICKABLE DATA TYPE CARDS QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-No MICIP image in main Home: PASS
-Main Home data-URI images suppressed: PASS
-MICIP remains in dark-blue sidebar: PASS
-Sidebar MICIP is small: PASS
-Four data-type launcher retained: PASS
-Start CNA retained: PASS
-Completed CNA sample retained: PASS
-Stable save migration retained: PASS
+Entire data-type cards clickable: PASS
+Keyboard activation retained: PASS
+Redundant visible Start CNA removed: PASS
+Autosave guidance retained: PASS
+Hover/focus affordance added: PASS
+MICIP remains only in sidebar: PASS
+Completed CNA example retained: PASS
+Stable saved-work migration retained: PASS
 Back navigation retained: PASS
