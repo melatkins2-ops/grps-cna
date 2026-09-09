@@ -1048,6 +1048,15 @@ textarea,input,select{max-width:100%}
   .crosswalk-table{display:block;overflow-x:auto}
 }
 
+
+.doc-body{min-width:0;width:100%}.doc-action-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 10px}.button-link{border:0;cursor:pointer;font:inherit}
+.upload-button{display:inline-block;background:#fff;border:1px solid #2479a8;color:#174d70;font-weight:800;padding:9px 12px;border-radius:9px;cursor:pointer;font-size:12px}.upload-button input{display:none}
+.template-reference{display:inline-block;margin:3px 0 12px;color:#2479a8;font-weight:800;font-size:12px}.upload-info{min-height:18px;font-size:11px;color:#597285;margin:2px 0 5px}.upload-info.has-file{padding:8px 10px;background:#f3f8f5;border:1px solid #c8dfd3;border-radius:8px;color:#315f4b}
+.pfe-editor{margin-top:18px;padding:18px;border:2px solid #bdd3e2;border-radius:14px;background:#f9fcfe}.pfe-editor[hidden]{display:none}.pfe-editor-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:4px}.pfe-editor-head h3{margin:4px 0 0;color:#17324d}
+.pfe-school-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}.pfe-school-meta>div{background:#fff;border:1px solid #d6e2ea;border-radius:9px;padding:10px}.pfe-school-meta b,.pfe-school-meta span{display:block}.pfe-school-meta b{font-size:10px;text-transform:uppercase;color:#6b8192;margin-bottom:3px}.pfe-school-meta span{font-weight:800;color:#17324d}.pfe-editor-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+@media(max-width:760px){.pfe-school-meta{grid-template-columns:1fr}.pfe-editor-head{display:block}.pfe-editor-head button{margin-top:8px}}
+@media print{body.print-parent-plan .sidebar,body.print-parent-plan .topbar,body.print-parent-plan .view:not(#req8),body.print-parent-plan #req8>*:not(#pfeEditor){display:none!important}body.print-parent-plan #pfeEditor{display:block!important;border:0;padding:0;background:#fff}body.print-parent-plan #pfeEditor .pfe-editor-head button,body.print-parent-plan #pfeEditor .pfe-editor-actions{display:none!important}}
+
 </style>
 </head>
 <body>
@@ -1081,7 +1090,7 @@ textarea,input,select{max-width:100%}
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>Title I Targeted Assistance & Schoolwide Plan</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v48</span></div></div>
+      <div class="top-title"><h1>Title I Targeted Assistance & Schoolwide Plan</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v49</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
@@ -1308,33 +1317,61 @@ textarea,input,select{max-width:100%}
       <div class="cna-carry" data-cna-carry><h3>Start with your CNA priorities</h3><div class="cna-carry-body">Complete Requirement 1 first. Your selected school needs will appear here automatically.</div></div><div class="guided-step"><div class="stepnum">1</div><div><b>Close the improvement loop</b><span>Confirm who was meaningfully consulted, then document the annual review and revision cycle.</span></div></div>
       <div class="plan-assurance"><div><b>Consultation included teachers</b></div><div class="assurance-choices"><label><input type="radio" name="req9_1" value="Yes" data-plan-key="req9_1"> Yes</label><label><input type="radio" name="req9_1" value="No" data-plan-key="req9_1"> No</label><label><input type="radio" name="req9_1" value="N/A" data-plan-key="req9_1"> N/A</label></div></div><div class="plan-assurance"><div><b>Consultation included principals and other school leaders</b></div><div class="assurance-choices"><label><input type="radio" name="req9_2" value="Yes" data-plan-key="req9_2"> Yes</label><label><input type="radio" name="req9_2" value="No" data-plan-key="req9_2"> No</label><label><input type="radio" name="req9_2" value="N/A" data-plan-key="req9_2"> N/A</label></div></div><div class="plan-assurance"><div><b>Consultation included paraprofessionals</b></div><div class="assurance-choices"><label><input type="radio" name="req9_3" value="Yes" data-plan-key="req9_3"> Yes</label><label><input type="radio" name="req9_3" value="No" data-plan-key="req9_3"> No</label><label><input type="radio" name="req9_3" value="N/A" data-plan-key="req9_3"> N/A</label></div></div><div class="plan-assurance"><div><b>Consultation included specialized instructional support personnel</b></div><div class="assurance-choices"><label><input type="radio" name="req9_4" value="Yes" data-plan-key="req9_4"> Yes</label><label><input type="radio" name="req9_4" value="No" data-plan-key="req9_4"> No</label><label><input type="radio" name="req9_4" value="N/A" data-plan-key="req9_4"> N/A</label></div></div><div class="plan-assurance"><div><b>Consultation included other appropriate school personnel</b></div><div class="assurance-choices"><label><input type="radio" name="req9_5" value="Yes" data-plan-key="req9_5"> Yes</label><label><input type="radio" name="req9_5" value="No" data-plan-key="req9_5"> No</label><label><input type="radio" name="req9_5" value="N/A" data-plan-key="req9_5"> N/A</label></div></div><div class="plan-assurance"><div><b>Consultation included parents and families</b></div><div class="assurance-choices"><label><input type="radio" name="req9_6" value="Yes" data-plan-key="req9_6"> Yes</label><label><input type="radio" name="req9_6" value="No" data-plan-key="req9_6"> No</label><label><input type="radio" name="req9_6" value="N/A" data-plan-key="req9_6"> N/A</label></div></div><div class="plan-assurance"><div><b>Consultation included scholars</b></div><div class="assurance-choices"><label><input type="radio" name="req9_7" value="Yes" data-plan-key="req9_7"> Yes</label><label><input type="radio" name="req9_7" value="No" data-plan-key="req9_7"> No</label><label><input type="radio" name="req9_7" value="N/A" data-plan-key="req9_7"> N/A</label></div></div><div class="plan-assurance"><div><b>Consultation included community members</b></div><div class="assurance-choices"><label><input type="radio" name="req9_8" value="Yes" data-plan-key="req9_8"> Yes</label><label><input type="radio" name="req9_8" value="No" data-plan-key="req9_8"> No</label><label><input type="radio" name="req9_8" value="N/A" data-plan-key="req9_8"> N/A</label></div></div><div class="plan-assurance"><div><b>Consultation included tribes/tribal organizations when applicable</b></div><div class="assurance-choices"><label><input type="radio" name="req9_9" value="Yes" data-plan-key="req9_9"> Yes</label><label><input type="radio" name="req9_9" value="No" data-plan-key="req9_9"> No</label><label><input type="radio" name="req9_9" value="N/A" data-plan-key="req9_9"> N/A</label></div></div><div class="plan-assurance"><div><b>Title I program will be reviewed at least annually and revised as necessary</b></div><div class="assurance-choices"><label><input type="radio" name="req9_10" value="Yes" data-plan-key="req9_10"> Yes</label><label><input type="radio" name="req9_10" value="No" data-plan-key="req9_10"> No</label><label><input type="radio" name="req9_10" value="N/A" data-plan-key="req9_10"> N/A</label></div></div><div class="plan-field"><label for="req9_11">Date Title I program was last reviewed/revised</label><input id="req9_11" class="plan-input" data-plan-key="req9_11" type="text" placeholder="Enter date"></div><div class="plan-assurance"><div><b>Programs will be regularly evaluated and revised so eligible scholars receive needed assistance</b></div><div class="assurance-choices"><label><input type="radio" name="req9_12" value="Yes" data-plan-key="req9_12"> Yes</label><label><input type="radio" name="req9_12" value="No" data-plan-key="req9_12"> No</label><label><input type="radio" name="req9_12" value="N/A" data-plan-key="req9_12"> N/A</label></div></div>
       <div class="requirement-footer"><span class="autosave-note">Saved automatically</span><button class="primary" onclick="goNextRequirement('req9')">Save & Continue →</button></div>
-    </div><div id="req8" class="view panel titlei-requirement">
-  <div class="kicker">REQUIREMENT 8</div>
-  <h2>Parent &amp; Family Engagement</h2>
-  <p class="section-help">Complete the required Parent &amp; Family Engagement Plan and ensure the school has its own Title I School-Parent Compact.</p>
-  <div class="req8-grid">
-    <div class="document-task">
-      <div class="doc-number">1</div>
-      <div><h3>Parent &amp; Family Engagement Plan</h3>
-      <p>Open the MDE template in your browser, complete the school plan, and retain the final version with the Title I plan.</p>
-      <a class="doc-link" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.michigan.gov%2Fdocuments%2Fmde%2FParent_and_Family_Engagement_Plan_Template_630927_7.docx" target="_blank" rel="noopener">Open Parent &amp; Family Engagement Plan ↗</a>
-      <div class="doc-status"><label><input type="checkbox" data-plan-key="req8_pfe_complete"> Plan completed</label><label><input type="checkbox" data-plan-key="req8_pfe_attached"> Final copy retained</label></div></div>
     </div>
-    <div class="document-task">
-      <div class="doc-number">2</div>
-      <div><h3>Title I School-Parent Compact</h3>
-      <p>The GRPS document is a <b>sample</b>. Each school should create and retain its own school-specific compact.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 8px">
-        <a class="doc-link" href="https://docs.google.com/document/d/15xZ55-KNkwK-ko4A6DZAAm3Dfek5QtfK/copy" target="_blank" rel="noopener">Create Your School Compact from Sample ↗</a>
-        <a class="doc-link" href="https://docs.google.com/document/d/15xZ55-KNkwK-ko4A6DZAAm3Dfek5QtfK/edit?usp=sharing&amp;ouid=101866085020746288335&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">View Sample Compact ↗</a>
+<div id="req8" class="view panel titlei-requirement">
+  <div class="kicker">REQUIREMENT 8</div>
+  <h2>Parent & Family Engagement</h2>
+  <p class="section-help">Create or upload the school's Parent & Family Engagement Plan and school-specific Title I School-Parent Compact. Both documents must be accounted for before Requirement 8 is complete.</p>
+  <div class="smart-rule-note"><b>Document workspace:</b> The Parent Plan is editable directly in this resource. Schools may also upload an existing Parent Plan or their own School-Parent Compact. Files are stored locally in this browser for the selected school/year.</div>
+
+  <div class="req8-grid">
+    <div class="document-task req8-editor-card">
+      <div class="doc-number">1</div><div class="doc-body">
+        <h3>Parent & Family Engagement Plan</h3>
+        <p>Create/edit the school plan here or upload an existing completed plan.</p>
+        <div class="doc-action-row">
+          <button class="doc-link button-link" type="button" onclick="togglePFEEditor()">Create / Edit Parent Plan</button>
+          <label class="upload-button">Upload Existing Parent Plan<input id="pfeUpload" type="file" accept=".doc,.docx,.pdf,.txt,.rtf" onchange="handleReq8Upload('pfe',this)"></label>
+        </div>
+        <div id="pfeUploadInfo" class="upload-info"></div>
+        <a class="template-reference" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.michigan.gov%2Fdocuments%2Fmde%2FParent_and_Family_Engagement_Plan_Template_630927_7.docx" target="_blank" rel="noopener">View MDE Parent Plan Template ↗</a>
+        <div class="doc-status"><label><input type="checkbox" data-plan-key="req8_pfe_complete"> School Parent Plan completed</label><label><input type="checkbox" data-plan-key="req8_pfe_attached"> Plan created/uploaded in this resource</label></div>
       </div>
-      <div class="plan-field" style="margin-top:12px"><label for="req8_compact_location">Already have a school compact? Record where the final version is stored</label><input id="req8_compact_location" class="plan-input" data-plan-key="req8_compact_location" type="text" placeholder="Example: School Title I Google Drive folder / 2026–27 compact"></div>
-      <div class="doc-status"><label><input type="checkbox" data-plan-key="req8_compact_complete"> School-specific compact completed</label><label><input type="checkbox" data-plan-key="req8_compact_attached"> Final copy retained</label></div></div>
+    </div>
+
+    <div class="document-task">
+      <div class="doc-number">2</div><div class="doc-body">
+        <h3>School-Specific Title I School-Parent Compact</h3>
+        <p>The GRPS compact is a sample. Each school should create or upload its own version.</p>
+        <div class="doc-action-row">
+          <a class="doc-link" href="https://docs.google.com/document/d/15xZ55-KNkwK-ko4A6DZAAm3Dfek5QtfK/copy" target="_blank" rel="noopener">Create from Sample ↗</a>
+          <label class="upload-button">Upload School Compact<input id="compactUpload" type="file" accept=".doc,.docx,.pdf,.txt,.rtf" onchange="handleReq8Upload('compact',this)"></label>
+        </div>
+        <div id="compactUploadInfo" class="upload-info"></div>
+        <div class="doc-status"><label><input type="checkbox" data-plan-key="req8_compact_complete"> School-specific compact completed</label><label><input type="checkbox" data-plan-key="req8_compact_attached"> Compact uploaded in this resource</label></div>
+      </div>
     </div>
   </div>
+
+  <div id="pfeEditor" class="pfe-editor" hidden>
+    <div class="pfe-editor-head"><div><div class="sample-tag">EDITABLE SCHOOL DOCUMENT</div><h3>Parent & Family Engagement Plan Builder</h3></div><button class="secondary" type="button" onclick="togglePFEEditor()">Close Editor</button></div>
+    <p class="section-help">Complete the school-specific plan. Entries save automatically in this browser.</p>
+    <div class="pfe-school-meta"><div><b>School</b><span id="pfeSchoolName">Selected school</span></div><div><b>School Year</b><span id="pfeSchoolYear">—</span></div></div>
+
+    <div class="plan-field"><label for="pfe_shared_responsibility">1. Shared responsibility for high scholar achievement</label><textarea id="pfe_shared_responsibility" data-plan-key="pfe_shared_responsibility" rows="5" placeholder="How will the school and families share responsibility for supporting scholar achievement?"></textarea></div>
+    <div class="plan-field"><label for="pfe_family_input">2. Family input in planning, review, and improvement</label><textarea id="pfe_family_input" data-plan-key="pfe_family_input" rows="5" placeholder="How and when will parents/families provide meaningful input into the Title I program and family-engagement activities?"></textarea></div>
+    <div class="plan-field"><label for="pfe_annual_meeting">3. Annual Title I meeting</label><textarea id="pfe_annual_meeting" data-plan-key="pfe_annual_meeting" rows="5" placeholder="When/how will the annual meeting be held, what will be explained, and how will participation be documented?"></textarea></div>
+    <div class="plan-field"><label for="pfe_communication">4. Accessible two-way communication</label><textarea id="pfe_communication" data-plan-key="pfe_communication" rows="5" placeholder="How will the school communicate in understandable formats/languages and create opportunities for two-way communication?"></textarea></div>
+    <div class="plan-field"><label for="pfe_capacity">5. Building family and staff capacity</label><textarea id="pfe_capacity" data-plan-key="pfe_capacity" rows="5" placeholder="What will the school do to help families support learning and help staff partner effectively with families?"></textarea></div>
+    <div class="plan-field"><label for="pfe_access">6. Access and participation</label><textarea id="pfe_access" data-plan-key="pfe_access" rows="5" placeholder="How will the school address barriers to participation, including language, disability, transportation, scheduling, or other access needs?"></textarea></div>
+    <div class="plan-field"><label for="pfe_cna_connection">7. Connection to CNA priorities</label><textarea id="pfe_cna_connection" data-plan-key="pfe_cna_connection" rows="5" placeholder="How will family-engagement strategies respond to the needs and priorities identified in the CNA?"></textarea></div>
+
+    <div class="pfe-editor-actions"><button class="secondary" type="button" onclick="printParentPlan()">Print / Save Parent Plan PDF</button><button class="primary" type="button" onclick="markParentPlanComplete()">Mark Parent Plan Complete</button></div>
+  </div>
   <div id="req8Status" class="requirement-status"></div>
-  <div class="requirement-footer"><span class="autosave-note">Saved automatically</span><button class="primary" onclick="goNextRequirement('req8')">Save &amp; Continue →</button></div>
-</div><div id="finalPlan" class="view panel titlei-requirement">
+  <div class="requirement-footer"><span class="autosave-note">Parent Plan text and uploaded files save locally for this school/year.</span><button class="primary" onclick="goNextRequirement('req8')">Save & Continue →</button></div>
+</div>
+<div id="finalPlan" class="view panel titlei-requirement">
   <div class="kicker">FINAL PLAN</div><h2>Title I Plan Readiness</h2>
   <p class="section-help">Use this page as the final quality check before retaining the completed plan and supporting attachments for monitoring.</p>
   <div id="titleIReadiness"></div>
@@ -1480,7 +1517,7 @@ let currentDomain=null;
 
 state.sourceChecks=state.sourceChecks||{}; state.evidenceTypes=state.evidenceTypes||{}; state.qualityChecks=state.qualityChecks||{};
 function save(){state.school=$('schoolSelect').value;state.year=$('year').value;try{localStorage.setItem('grpsCNA',JSON.stringify(state))}catch(e){console.warn('Autosave unavailable.',e)}updateStats()}
-function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));const el=$(id);if(el)el.classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='home')renderCards();if(id==='needs')renderNeeds();if(id==='why')renderWhy();if(id==='priorities')renderPriorities();if(id==='story')renderStory();if(id==='req8')renderReq8Status();if(id==='smartConnections')renderSmartConnections();if(id==='crosswalk')renderCrosswalk();if(id==='finalPlan')renderTitleIReadiness();if(/^req[2-9]$/.test(id)){renderSmartCarryForward();}window.scrollTo(0,0)}
+function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));const el=$(id);if(el)el.classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='home')renderCards();if(id==='needs')renderNeeds();if(id==='why')renderWhy();if(id==='priorities')renderPriorities();if(id==='story')renderStory();if(id==='req8'){renderReq8Status();renderReq8Uploads();renderPFEContext();}if(id==='smartConnections')renderSmartConnections();if(id==='crosswalk')renderCrosswalk();if(id==='finalPlan')renderTitleIReadiness();if(/^req[2-9]$/.test(id)){renderSmartCarryForward();}window.scrollTo(0,0)}
 function domainCompletion(d){let n=0;d.prompts.forEach((p,i)=>{const a=state.answers[d.id+'_'+i]||{};if((a.note&&a.note.trim())||a.choice)n++});return{done:n,total:d.prompts.length}}
 
 function schoolMetricValue(m,suffix=''){
@@ -2459,6 +2496,22 @@ function renderCrosswalk(){
   }).join('')}</tbody></table>
   <div class="smart-warning"><b>Important:</b> Smart Connections organize the planning work and show where CNA priorities should carry forward. They do not replace the school's responsibility to complete each required response, assurance, and attachment.</div>`;
 }
+
+
+const REQ8_DB='grpsTitleIReq8Files';
+function req8SchoolKey(){return `${(state&&state.school)||'no-school'}__${(state&&state.year)||'no-year'}`}
+function openReq8DB(){return new Promise((resolve,reject)=>{const r=indexedDB.open(REQ8_DB,1);r.onupgradeneeded=()=>{const db=r.result;if(!db.objectStoreNames.contains('files'))db.createObjectStore('files',{keyPath:'id'})};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})}
+async function storeReq8File(kind,file){const db=await openReq8DB(),id=`${req8SchoolKey()}__${kind}`,rec={id,kind,schoolKey:req8SchoolKey(),name:file.name,type:file.type||'',size:file.size,lastModified:file.lastModified,blob:file,storedAt:new Date().toISOString()};await new Promise((resolve,reject)=>{const tx=db.transaction('files','readwrite');tx.objectStore('files').put(rec);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)});db.close();return rec}
+async function getReq8File(kind){const db=await openReq8DB(),id=`${req8SchoolKey()}__${kind}`;const rec=await new Promise((resolve,reject)=>{const tx=db.transaction('files','readonly'),r=tx.objectStore('files').get(id);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)});db.close();return rec}
+function formatBytes(n){if(!n)return'0 KB';if(n<1024)return`${n} B`;if(n<1048576)return`${Math.round(n/1024)} KB`;return`${(n/1048576).toFixed(1)} MB`}
+async function handleReq8Upload(kind,input){const file=input.files&&input.files[0];if(!file)return;const ext=(file.name.split('.').pop()||'').toLowerCase();if(!['doc','docx','pdf','txt','rtf'].includes(ext)){alert('Please upload a Word, PDF, RTF, or text document.');input.value='';return}try{await storeReq8File(kind,file);if(kind==='pfe'){titleIPlan.req8_pfe_attached=true;titleIPlan.req8_pfe_complete=true}else{titleIPlan.req8_compact_attached=true;titleIPlan.req8_compact_complete=true}saveTitleIPlan();syncReq8Checkboxes();renderReq8Uploads()}catch(e){console.error(e);alert('This browser could not save the file locally. Try a smaller file or a supported modern browser.')}}
+async function renderReq8Uploads(){for(const kind of ['pfe','compact']){const el=$(kind==='pfe'?'pfeUploadInfo':'compactUploadInfo');if(!el)continue;try{const rec=await getReq8File(kind);if(rec){el.className='upload-info has-file';el.innerHTML=`✓ ${escapeHtml(rec.name)} • ${formatBytes(rec.size)} <button class="secondary" type="button" onclick="openReq8Upload('${kind}')">Open</button>`}else{el.className='upload-info';el.textContent='No file uploaded yet.'}}catch(e){el.className='upload-info';el.textContent='File storage unavailable in this browser.'}}}
+async function openReq8Upload(kind){const rec=await getReq8File(kind);if(!rec||!rec.blob)return;const url=URL.createObjectURL(rec.blob);window.open(url,'_blank');setTimeout(()=>URL.revokeObjectURL(url),60000)}
+function syncReq8Checkboxes(){document.querySelectorAll('#req8 [data-plan-key]').forEach(el=>{if(el.type==='checkbox')el.checked=!!titleIPlan[el.dataset.planKey]})}
+function togglePFEEditor(){const editor=$('pfeEditor');if(!editor)return;editor.hidden=!editor.hidden;if(!editor.hidden){renderPFEContext();editor.scrollIntoView({behavior:'smooth',block:'start'})}}
+function renderPFEContext(){const sel=$('schoolSelect'),name=sel&&sel.selectedOptions&&sel.selectedOptions[0]?sel.selectedOptions[0].textContent:'Selected school';if($('pfeSchoolName'))$('pfeSchoolName').textContent=name;if($('pfeSchoolYear'))$('pfeSchoolYear').textContent=(state&&state.year)||($('yearSelect')?$('yearSelect').value:'—')||'—'}
+function markParentPlanComplete(){const keys=['pfe_shared_responsibility','pfe_family_input','pfe_annual_meeting','pfe_communication','pfe_capacity','pfe_access','pfe_cna_connection'],missing=keys.filter(k=>!String(titleIPlan[k]||'').trim());if(missing.length){alert(`Complete all Parent Plan sections before marking it complete. ${missing.length} section${missing.length===1?' is':'s are'} still blank.`);return}titleIPlan.req8_pfe_complete=true;titleIPlan.req8_pfe_attached=true;saveTitleIPlan();syncReq8Checkboxes();renderReq8Status()}
+function printParentPlan(){document.body.classList.add('print-parent-plan');window.print();setTimeout(()=>document.body.classList.remove('print-parent-plan'),500)}
 
 </script>
 
