@@ -862,6 +862,24 @@ textarea,input,select{max-width:100%}
   display:none !important;
 }
 
+
+/* v44 verified functional entry points */
+.data-type-tile{cursor:pointer}
+.data-type-tile:active{transform:translateY(0);box-shadow:0 3px 10px rgba(29,66,96,.10)}
+.selected-school-chip{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 14px;
+  align-items:center;
+  padding:9px 11px;
+  border-radius:9px;
+  background:#f3f8fb;
+  border:1px solid #d6e5ef;
+  color:#4f697d;
+  font-size:12px;
+}
+.selected-school-chip b{color:#17324d;font-size:13px}
+
 </style>
 </head>
 <body>
@@ -889,7 +907,7 @@ textarea,input,select{max-width:100%}
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v43</span></div></div>
+      <div class="top-title"><h1>Comprehensive Needs Assessment</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v44</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
@@ -1264,7 +1282,7 @@ function renderCards(){
   box.innerHTML=DATA_TYPE_GROUPS.map((g,gi)=>{
     const gc=dataTypeCompletion(g);
     const complete=gc.complete;
-    return `<div class="data-type-tile ${complete?'complete':''}" data-group="${g.id}" tabindex="0" role="button" aria-label="Open ${escapeHtml(g.label)}">
+    return `<div class="data-type-tile ${complete?'complete':''}" data-group="${g.id}" tabindex="0" role="button" aria-label="Open ${escapeHtml(g.label)}" onclick="openDataType('${g.id}')">
       <div class="data-type-number">Data Type ${gi+1}</div>
       <h3>${escapeHtml(g.label)}</h3>
       <p>${escapeHtml(g.question)}</p>
@@ -1276,7 +1294,6 @@ function renderCards(){
   }).join('');
   box.querySelectorAll('.data-type-tile').forEach(tile=>{
     const open=()=>openDataType(tile.dataset.group);
-    tile.addEventListener('click',open);
     tile.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
   });
 }
@@ -1624,6 +1641,25 @@ function evidenceRows(items,kind){
     return `<div class="evidence-row"><div class="evidence-name">${escapeHtml(item.label)}</div><div class="evidence-source">${source}${path}${detail}</div><div class="evidence-action">${action}</div></div>`;
   }).join('');
 }
+
+function renderSelectedSchoolContext(){
+  const box=$('selectedSchoolContext');
+  if(!box)return;
+  const school=$('schoolSelect')?.value||state.school||'';
+  if(!school){
+    box.innerHTML='<div class="small">Select a school to apply school-specific evidence and grade-span rules.</div>';
+    return;
+  }
+  const meta=SCHOOL_META[school]||{};
+  const d=SCHOOL_DATA[school]||{};
+  const facts=[];
+  if(meta.grades) facts.push(`Grades ${escapeHtml(meta.grades)}`);
+  if(d.enrollment?.value) facts.push(`Enrollment ${escapeHtml(String(d.enrollment.value))}`);
+  if(d.chronic_absence?.value) facts.push(`Chronic absence ${escapeHtml(String(d.chronic_absence.value))}`);
+  if(d.support?.value) facts.push(`Federal support: ${escapeHtml(String(d.support.value))}`);
+  box.innerHTML=`<div class="selected-school-chip"><b>${escapeHtml(school)}</b>${facts.length?`<span>${facts.join(' • ')}</span>`:''}</div>`;
+}
+
 function renderDataTypeEvidence(groupId){
   const box=$('dataTypeEvidence'); if(!box)return;
   const a=dataAccessForGroup(groupId);

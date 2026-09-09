@@ -1,13 +1,17 @@
-GRPS CNA v43 — CLICKABLE DATA TYPE CARDS QA
+GRPS CNA v44 — FUNCTIONAL DATA TYPE CARDS QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Entire data-type cards clickable: PASS
+Missing helper restored: PASS
+openDataType helper now resolvable: PASS
+Cards have direct click action: PASS
 Keyboard activation retained: PASS
-Redundant visible Start CNA removed: PASS
-Autosave guidance retained: PASS
-Hover/focus affordance added: PASS
+Pointer cursor added: PASS
+Data Type destination view exists: PASS
+Data Type domains destination exists: PASS
+Visible Start CNA remains removed: PASS
 MICIP remains only in sidebar: PASS
-Completed CNA example retained: PASS
 Stable saved-work migration retained: PASS
 Back navigation retained: PASS
+
+Root cause fixed: openDataType() called renderSelectedSchoolContext(), but that function was missing from the build. The cards now use a direct onclick action plus keyboard activation.
