@@ -1,17 +1,17 @@
-GRPS CNA v44 — FUNCTIONAL DATA TYPE CARDS QA
+GRPS Title I Plan v46 QA
+============================
+PASS — JavaScript syntax
+PASS — v46 stamp
+PASS — 9 requirements
+PASS — no duplicate ids
+PASS — nav targets
+PASS — CNA priority carry-forward
+PASS — Requirement 1 readiness
+PASS — Title I program type
+PASS — Requirement 8 MDE link
+PASS — Requirement 8 GRPS compact link
+PASS — autosave
+PASS — HTTPS links
 
-JavaScript syntax: PASS
-No duplicate IDs: PASS
-Missing helper restored: PASS
-openDataType helper now resolvable: PASS
-Cards have direct click action: PASS
-Keyboard activation retained: PASS
-Pointer cursor added: PASS
-Data Type destination view exists: PASS
-Data Type domains destination exists: PASS
-Visible Start CNA remains removed: PASS
-MICIP remains only in sidebar: PASS
-Stable saved-work migration retained: PASS
-Back navigation retained: PASS
-
-Root cause fixed: openDataType() called renderSelectedSchoolContext(), but that function was missing from the build. The cards now use a direct onclick action plus keyboard activation.
+Duplicate IDs: []
+Missing nav targets: []
