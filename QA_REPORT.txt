@@ -1,17 +1,12 @@
-GRPS Title I Plan v52 — AUTOMATED PROGRAM TYPE QA
+GRPS Title I Plan v53 — HOME BUTTON QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Schoolwide roster loaded: PASS
-Targeted Assistance roster loaded: PASS
-Non-Title I roster loaded: PASS
-School selection auto-classifies: PASS
-Program type visible on home: PASS
-Program type visible in sidebar: PASS
-Non-Title I blocks Title I workflow: PASS
-Targeted/Schoolwide proceed to integrated plan: PASS
+Persistent Home button exists: PASS
+Home button routes to Home: PASS
+Bottom-right desktop placement: PASS
+Mobile compact Home button: PASS
+Hidden when printing: PASS
+Automated Title I program type retained: PASS
 Global hyperlink support retained: PASS
-Requirement 8 editor retained: PASS
-Smart Connections retained: PASS
-
-Classification source: district list supplied by user for 2026-27. Blandford = No Title I Funds; Center for Economicology, City Middle/High School, and Zoo School = Targeted Assistance; listed remaining programs = Schoolwide.
+Parent Plan editor retained: PASS

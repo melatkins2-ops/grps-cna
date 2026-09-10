@@ -1105,9 +1105,47 @@ body.non-title-i .simplified-nav button[data-view="req8"],
 body.non-title-i .simplified-nav button[data-view="finalPlan"],
 body.non-title-i .sidebar-utility{display:none!important}
 
+
+/* v53 persistent Home button */
+.persistent-home-button{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  min-height:44px;
+  padding:9px 13px;
+  border:2px solid #fff;
+  border-radius:999px;
+  background:#173f63;
+  color:#fff;
+  box-shadow:0 5px 18px rgba(23,50,77,.22);
+  font:inherit;
+  font-size:12px;
+  font-weight:900;
+  cursor:pointer;
+}
+.persistent-home-button:hover,.persistent-home-button:focus{
+  background:#245b84;
+  outline:3px solid rgba(215,107,45,.35);
+  outline-offset:2px;
+}
+.persistent-home-button span:first-child{font-size:18px;line-height:1}
+@media(max-width:700px){
+  .persistent-home-button{right:14px;bottom:14px;width:48px;height:48px;padding:0;justify-content:center}
+  .persistent-home-button .home-label{display:none}
+}
+@media print{.persistent-home-button{display:none!important}}
+
 </style>
 </head>
 <body>
+<button id="persistentHomeButton" class="persistent-home-button" type="button" onclick="show('home')" aria-label="Return to Home" title="Home">
+  <span aria-hidden="true">⌂</span><span class="home-label">Home</span>
+</button>
+
 <div class="app">
   <aside class="sidebar">
     <div class="brand">GRPS<span>◆</span><small>Grand Rapids Public Schools</small></div>
@@ -1135,7 +1173,7 @@ body.non-title-i .sidebar-utility{display:none!important}
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>Title I Targeted Assistance & Schoolwide Plan</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v52</span></div></div>
+      <div class="top-title"><h1>Title I Targeted Assistance & Schoolwide Plan</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v53</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
