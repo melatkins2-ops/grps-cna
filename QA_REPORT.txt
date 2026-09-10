@@ -1,12 +1,17 @@
-GRPS Title I Plan v50 — MAJOR DESIGN REVISION QA
+GRPS Title I Plan v52 — AUTOMATED PROGRAM TYPE QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Five-stage sidebar: PASS
-Plan Builder hub: PASS
-Requirements grouped: PASS
-Single home continue: PASS
+Schoolwide roster loaded: PASS
+Targeted Assistance roster loaded: PASS
+Non-Title I roster loaded: PASS
+School selection auto-classifies: PASS
+Program type visible on home: PASS
+Program type visible in sidebar: PASS
+Non-Title I blocks Title I workflow: PASS
+Targeted/Schoolwide proceed to integrated plan: PASS
+Global hyperlink support retained: PASS
 Requirement 8 editor retained: PASS
-Uploads retained: PASS
 Smart Connections retained: PASS
-Crosswalk retained: PASS
+
+Classification source: district list supplied by user for 2026-27. Blandford = No Title I Funds; Center for Economicology, City Middle/High School, and Zoo School = Targeted Assistance; listed remaining programs = Schoolwide.
