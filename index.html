@@ -632,6 +632,34 @@ textarea,input,select{max-width:100%}
 .sample-story{border-left:5px solid #c79b33;background:#fff9e9}
 .sample-tag{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:#e9f1f6;color:#31566f;border-radius:999px;padding:4px 8px;margin-bottom:6px}
 .sample-warning{font-size:.9rem;color:#5b6670}
+
+/* v74: digestible CNA exemplar with progressive disclosure */
+.sample-intro{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.sample-intro p{max-width:900px}
+.sample-scan{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0 20px}
+.sample-scan-card{border:1px solid #d9e3ea;border-radius:12px;padding:14px;background:#fff;min-height:150px}
+.sample-scan-card h3{font-size:1.02rem;line-height:1.25;margin:5px 0 8px;color:#17324d}
+.sample-key{font-size:.94rem;line-height:1.42;color:#35546c;margin:0 0 10px}
+.sample-more{border-top:1px solid #e3ebf0;padding-top:9px;margin-top:8px}
+.sample-more summary{cursor:pointer;color:#0b67c2;font-weight:800;font-size:.9rem;list-style:none}
+.sample-more summary::-webkit-details-marker{display:none}
+.sample-more summary:after{content:' +';font-weight:900}
+.sample-more[open] summary:after{content:' −'}
+.sample-more p{font-size:.9rem;line-height:1.45;color:#455d70;margin:8px 0 0}
+.sample-section-lead{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:24px}
+.sample-section-lead h3{margin:0}
+.sample-section-lead span{font-size:.9rem;color:#61778a}
+.sample-need-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0}
+.sample-need-card{border:1px solid #d9e3ea;border-radius:12px;padding:15px;background:#fff}
+.sample-need-card h3{font-size:1.05rem;margin:4px 0 10px}
+.sample-line{display:grid;grid-template-columns:92px 1fr;gap:8px;padding:7px 0;border-top:1px solid #edf1f4;font-size:.92rem;line-height:1.4}
+.sample-line:first-of-type{border-top:0}
+.sample-line b{color:#17324d}
+.sample-story-points{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:10px}
+.sample-story-point{background:#fff;border:1px solid #eadcae;border-radius:10px;padding:11px;font-size:.9rem;line-height:1.4}
+.sample-story-point b{display:block;color:#17324d;margin-bottom:4px}
+@media(max-width:1050px){.sample-scan{grid-template-columns:repeat(2,minmax(0,1fr))}.sample-story-points{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.sample-scan,.sample-need-summary,.sample-story-points{grid-template-columns:1fr}.sample-line{grid-template-columns:1fr;gap:2px}}
 @media(max-width:760px){.sample-grid{grid-template-columns:1fr}}
 
 
@@ -1746,61 +1774,48 @@ body.non-title-i .approved-step.step2,body.non-title-i .approved-step.step3,body
     <p style="margin:0">This example models the level of evidence, analysis, prioritization, and writing expected in a high-quality CNA. The numbers and findings below are intentionally illustrative. Schools should replace them with their own verified evidence.</p>
   </div>
 
-  <h3>1. What the team learned from the four data types</h3>
-  <div class="sample-grid">
-    <div class="sample-card"><div class="sample-tag">Demographic Data</div><h3>Attendance is the clearest access issue.</h3><p class="sample-evidence"><b>Evidence reviewed:</b> enrollment and subgroup trends, chronic absence, mobility, attendance by grade, special-population rosters.</p><p>Chronic absence is 41%, with the highest rates in grades 7–8. Scholars with high mobility and scholars receiving intensive supports are overrepresented. The pattern begins early in the year rather than appearing only after winter.</p></div>
-    <div class="sample-card"><div class="sample-tag">Achievement / Outcome Data</div><h3>Literacy performance is uneven and closely connected to attendance.</h3><p class="sample-evidence"><b>Evidence reviewed:</b> NWEA reading, M-STEP ELA, course performance, common assessments, MTSS progress monitoring.</p><p>Reading growth is strongest among scholars with consistent attendance. Grade 7 informational-text performance and written response are recurring weaknesses across state, benchmark, and classroom evidence. Scholars missing 10% or more instructional days show substantially lower course success.</p></div>
-    <div class="sample-card"><div class="sample-tag">Process Data</div><h3>Strong practices exist, but implementation is inconsistent.</h3><p class="sample-evidence"><b>Evidence reviewed:</b> PLC agendas, intervention rosters, attendance-team records, walkthroughs, family-contact logs, master schedule.</p><p>Teams have common assessments and an attendance response process, but use varies by grade and team. Early attendance signals do not consistently lead to documented barrier identification. Intervention entry criteria are clearer than progress-monitoring and exit criteria.</p></div>
-    <div class="sample-card"><div class="sample-tag">Perception Data</div><h3>Relationships are a strength; belonging and communication are less consistent.</h3><p class="sample-evidence"><b>Evidence reviewed:</b> scholar voice, family feedback, staff survey, focus groups, counseling themes.</p><p>Most scholars identify at least one trusted adult, a significant strength. However, grade 8 scholars report weaker belonging and academic confidence. Families value staff responsiveness but describe attendance and academic communications as more reactive than preventive.</p></div>
+  <div class="sample-section-lead"><h3>1. What the team learned from the four data types</h3><span>Scan the key finding first. Open details only when needed.</span></div>
+  <div class="sample-scan">
+    <div class="sample-scan-card"><div class="sample-tag">Demographic Data</div><h3>Attendance is the clearest access issue.</h3><p class="sample-key"><b>Key finding:</b> Chronic absence is 41% and is highest in grades 7–8, with some groups overrepresented.</p><details class="sample-more"><summary>See evidence & pattern</summary><p><b>Evidence:</b> Enrollment/subgroup trends, chronic absence, mobility, attendance by grade, special-population rosters.</p><p>The pattern begins early in the year rather than appearing only after winter.</p></details></div>
+    <div class="sample-scan-card"><div class="sample-tag">Achievement / Outcome</div><h3>Literacy performance is uneven.</h3><p class="sample-key"><b>Key finding:</b> Informational-text and written-response weaknesses recur, especially among scholars with inconsistent attendance.</p><details class="sample-more"><summary>See evidence & pattern</summary><p><b>Evidence:</b> NWEA reading, M-STEP ELA, course performance, common assessments, MTSS progress monitoring.</p><p>Scholars missing 10% or more instructional days show substantially lower course success.</p></details></div>
+    <div class="sample-scan-card"><div class="sample-tag">Process Data</div><h3>Good practices are not yet consistent.</h3><p class="sample-key"><b>Key finding:</b> Common assessments and attendance processes exist, but follow-through varies by grade and team.</p><details class="sample-more"><summary>See evidence & pattern</summary><p><b>Evidence:</b> PLC agendas, intervention rosters, attendance-team records, walkthroughs, family-contact logs, master schedule.</p><p>Early attendance signals do not consistently trigger barrier identification; progress-monitoring and exit criteria also vary.</p></details></div>
+    <div class="sample-scan-card"><div class="sample-tag">Perception Data</div><h3>Relationships are a strength.</h3><p class="sample-key"><b>Key finding:</b> Most scholars identify a trusted adult, but grade 8 belonging and proactive family communication are weaker.</p><details class="sample-more"><summary>See evidence & pattern</summary><p><b>Evidence:</b> Scholar voice, family feedback, staff survey, focus groups, counseling themes.</p><p>Families value staff responsiveness but describe attendance and academic communication as more reactive than preventive.</p></details></div>
   </div>
 
-  <div class="sample-card">
+  <div class="sample-card" style="border-left:5px solid #1f6f9f">
     <div class="sample-tag">Cross-data synthesis</div>
-    <h3>The data point to two connected needs—not four separate problems.</h3>
-    <p>Across demographic, outcome, process, and perception evidence, two patterns repeat: <b>(1) inconsistent attendance reduces access to instruction, particularly for scholars already experiencing barriers; and (2) literacy support is not consistently delivered and monitored across classrooms and intervention settings.</b> The team did not elevate every weakness to a priority. It selected needs that appeared across multiple sources, had clear scholar impact, and had causes the school could influence.</p>
+    <h3>Four data types → two connected needs</h3>
+    <p style="margin:0"><b>Attendance/access:</b> inconsistent attendance reduces access to instruction. &nbsp; <b>Literacy:</b> literacy support is not consistently delivered and monitored. The team elevated only needs that repeated across sources, affected scholars, and had causes the school could influence.</p>
   </div>
 
-  <h3 style="margin-top:24px">2. School needs and root causes</h3>
+  <div class="sample-section-lead"><h3>2. School needs and root causes</h3><span>Need first. Root cause second.</span></div>
+  <div class="sample-need-summary">
+    <div class="sample-need-card"><div class="sample-tag">Need 1 — Attendance & Belonging</div><h3>Build an early-warning and barrier-response system.</h3><div class="sample-line"><b>Gap</b><span>41% chronic absence; follow-through after early warning signs is inconsistent.</span></div><div class="sample-line"><b>Need</b><span>Connect attendance data, scholar/family voice, and matched interventions before absence becomes chronic.</span></div><div class="sample-line"><b>Root cause</b><span>Ownership, barrier documentation, and follow-up expectations are not consistently defined.</span></div><details class="sample-more"><summary>See full example details</summary><p><b>Most affected:</b> Grades 7–8 and scholars experiencing mobility or recurring family/transportation barriers.</p><p><b>Desired state:</b> Concerns are identified early, barriers documented, and support matched before chronic absence develops.</p><p><b>Root-cause evidence:</b> Attendance-team records, contact logs, staff interviews, family feedback, intervention documentation.</p></details></div>
+    <div class="sample-need-card"><div class="sample-tag">Need 2 — Literacy</div><h3>Make literacy instruction and monitoring consistent.</h3><div class="sample-line"><b>Gap</b><span>Persistent informational-text/written-response weakness; intervention response varies.</span></div><div class="sample-line"><b>Need</b><span>Consistent high-leverage literacy practices across core instruction and intervention.</span></div><div class="sample-line"><b>Root cause</b><span>No consistently used instructional response and progress-monitoring cycle tied to identified skills.</span></div><details class="sample-more"><summary>See full example details</summary><p><b>Most affected:</b> Scholars below benchmark, especially those with inconsistent attendance or limited growth after initial intervention.</p><p><b>Desired state:</b> Grade-level instruction plus timely evidence-based support with common progress monitoring.</p><p><b>Root-cause evidence:</b> Common assessments, walkthroughs, PLC artifacts, intervention plans, progress monitoring, scholar work.</p></details></div>
+  </div>
+
+  <div class="sample-section-lead"><h3>3. Final priorities</h3><span>Only the highest-leverage needs move forward.</span></div>
   <div class="sample-grid">
-    <div class="sample-card">
-      <div class="sample-tag">Need 1 — Attendance & Belonging</div>
-      <p><b>Who is most affected:</b> Scholars with emerging attendance concerns, especially grades 7–8 and scholars experiencing mobility or recurring family/transportation barriers.</p>
-      <p><b>Desired state:</b> Attendance concerns are identified early; barriers are documented; scholars and families receive timely, matched support before chronic absence develops.</p>
-      <p><b>Current-to-desired gap:</b> Chronic absence is 41%, and team records show inconsistent follow-through after early warning signs.</p>
-      <p><b>School need:</b> The school needs a consistent early-warning and barrier-response system that connects attendance data, scholar/family voice, and matched interventions before absence becomes chronic.</p>
-      <p><b>Root cause:</b> Attendance routines emphasize notification and case response after absences accumulate; ownership, barrier documentation, and follow-up expectations are not consistently defined across teams.</p>
-      <p><b>Root-cause evidence:</b> attendance-team records, contact logs, staff interviews, family feedback, intervention documentation.</p>
-    </div>
-    <div class="sample-card">
-      <div class="sample-tag">Need 2 — Literacy</div>
-      <p><b>Who is most affected:</b> Scholars below benchmark in reading, particularly those with inconsistent attendance and scholars not demonstrating growth after initial intervention.</p>
-      <p><b>Desired state:</b> All scholars receive grade-level literacy instruction plus timely, evidence-based support with common progress-monitoring expectations.</p>
-      <p><b>Current-to-desired gap:</b> Multiple measures show persistent weakness in informational-text comprehension and written response; intervention response varies across teams.</p>
-      <p><b>School need:</b> The school needs consistent implementation and progress monitoring of high-leverage literacy practices across core instruction and intervention.</p>
-      <p><b>Root cause:</b> PLC and intervention structures identify scholars who need support, but the school lacks a consistently used instructional response and common progress-monitoring cycle tied to the identified literacy skills.</p>
-      <p><b>Root-cause evidence:</b> common-assessment analysis, walkthroughs, PLC artifacts, intervention plans, progress-monitoring records, scholar work.</p>
-    </div>
+    <div class="sample-card sample-priority"><div class="sample-tag">Priority 1</div><h3>Early Attendance & Belonging Response</h3><p><b>Focus:</b> Early warning → relationship-based outreach → barrier identification → matched support.</p><details class="sample-more"><summary>Why this priority + measures</summary><p><b>Why:</b> It affects access to every other improvement effort, appears across all four data types, and has school-influenceable causes.</p><p><b>Measures:</b> Chronic absence, movement into chronic absence, attendance by grade/subgroup, time from signal to outreach, barrier resolution, belonging.</p></details></div>
+    <div class="sample-card sample-priority"><div class="sample-tag">Priority 2</div><h3>Consistent Literacy Instruction & Intervention</h3><p><b>Focus:</b> Common high-leverage literacy practices + common progress-monitoring cycle.</p><details class="sample-more"><summary>Why this priority + measures</summary><p><b>Why:</b> The need appears in state, benchmark, classroom, and process evidence and is tied to an implementation gap the school can address.</p><p><b>Measures:</b> NWEA growth, M-STEP ELA, common-assessment mastery, intervention response, course success, walkthrough evidence.</p></details></div>
   </div>
 
-  <h3 style="margin-top:24px">3. Final priorities</h3>
-  <div class="sample-grid">
-    <div class="sample-card sample-priority"><div class="sample-tag">Priority 1</div><h3>Early Attendance & Belonging Response</h3><p><b>Priority statement:</b> Establish a consistent schoolwide early-warning and barrier-response system so emerging attendance concerns trigger timely relationship-based outreach, barrier identification, and matched support.</p><p><b>Why this rises to priority:</b> It affects access to every other improvement effort, appears across all four data types, disproportionately affects identifiable groups, and has school-influenceable causes.</p><p><b>Measures to watch:</b> chronic absence; percentage of scholars moving from emerging to chronic absence; attendance by grade/subgroup; time from signal to outreach; documented barrier resolution; scholar belonging.</p></div>
-    <div class="sample-card sample-priority"><div class="sample-tag">Priority 2</div><h3>Consistent Literacy Instruction & Intervention</h3><p><b>Priority statement:</b> Strengthen consistent use of high-leverage literacy practices and a common progress-monitoring cycle across core instruction and intervention, with emphasis on informational text and evidence-based written response.</p><p><b>Why this rises to priority:</b> The need is visible in state, benchmark, classroom, and process evidence and is linked to an implementation gap the school can address.</p><p><b>Measures to watch:</b> NWEA growth; M-STEP ELA; common-assessment mastery; intervention response; course success; walkthrough evidence of agreed literacy practices.</p></div>
-  </div>
-
-  <h3 style="margin-top:24px">4. Completed CNA Story</h3>
+  <div class="sample-section-lead"><h3>4. Completed CNA Story</h3><span>Five short ideas tell the full story.</span></div>
   <div class="sample-card sample-story">
     <div class="sample-tag">Executive-quality data story</div>
-    <p><b>Our strengths.</b> The school has a strong relational foundation. Most scholars report having a trusted adult, staff demonstrate commitment to scholars, and teams already use common assessments and intervention structures. These are assets to build on rather than systems to replace.</p>
-    <p><b>What the evidence says.</b> The most consequential pattern is inconsistent access to instruction. Chronic absence is high and is concentrated among specific groups and grade levels. At the same time, literacy evidence shows recurring difficulty with informational text and written response. Scholars with inconsistent attendance experience weaker academic outcomes, but attendance alone does not explain the literacy pattern.</p>
-    <p><b>What our school needs.</b> The school needs two things: a reliable early attendance and barrier-response system, and more consistent literacy instruction and progress monitoring across core and intervention settings. These needs are supported by multiple sources rather than a single test, survey, or anecdote.</p>
-    <p><b>Why the needs exist.</b> Current systems identify concerns, but implementation is not sufficiently consistent. Attendance response often intensifies after absences accumulate, while literacy teams vary in the instructional response and progress-monitoring cycle used after a need is identified. These are conditions the school can influence.</p>
-    <p><b>What moves forward.</b> The CNA therefore identifies two priorities for improvement planning: <b>Early Attendance & Belonging Response</b> and <b>Consistent Literacy Instruction & Intervention</b>. The next MICIP step is not to add disconnected programs. It is to examine current initiatives, determine what should be strengthened, adjusted, or stopped, and select evidence-based strategies that directly address these root causes.</p>
+    <div class="sample-story-points">
+      <div class="sample-story-point"><b>Strength</b>Strong relationships, committed staff, common assessments, and existing intervention structures.</div>
+      <div class="sample-story-point"><b>Evidence</b>Attendance limits access to instruction; literacy weaknesses recur across several measures.</div>
+      <div class="sample-story-point"><b>Need</b>Earlier attendance/barrier response and more consistent literacy instruction and monitoring.</div>
+      <div class="sample-story-point"><b>Why</b>Systems identify concerns, but implementation and follow-through are inconsistent.</div>
+      <div class="sample-story-point"><b>Moves forward</b>Two priorities advance into planning—not a list of disconnected programs.</div>
+    </div>
+    <details class="sample-more" style="margin-top:12px"><summary>Read the full sample CNA story</summary><p><b>Our strengths.</b> The school has a strong relational foundation. Most scholars report having a trusted adult, staff demonstrate commitment to scholars, and teams already use common assessments and intervention structures.</p><p><b>What the evidence says.</b> Chronic absence is high and concentrated among specific groups and grade levels. Literacy evidence also shows recurring difficulty with informational text and written response.</p><p><b>What our school needs.</b> A reliable early attendance and barrier-response system, and more consistent literacy instruction and progress monitoring across core and intervention settings.</p><p><b>Why the needs exist.</b> Current systems identify concerns, but implementation is not sufficiently consistent. These are conditions the school can influence.</p><p><b>What moves forward.</b> Early Attendance & Belonging Response and Consistent Literacy Instruction & Intervention move into improvement planning.</p></details>
   </div>
 
   <div class="sample-banner">
     <h3 style="margin:0 0 7px">Why this is a strong CNA</h3>
-    <p style="margin:0">It uses all four data types, names strengths, triangulates evidence, narrows the work to a few needs, separates needs from strategies, tests root causes with evidence, identifies influenceable conditions, and carries only the highest-leverage priorities into planning. It is concise enough to guide decisions without becoming a data dump.</p>
+    <p style="margin:0">It triangulates the four data types, narrows the work to a few needs, separates needs from strategies, tests root causes with evidence, and carries only the highest-leverage priorities into planning.</p>
   </div>
   <div class="actions"><button class="secondary" onclick="show('home')">← Back to Home</button><button class="primary" onclick="show('needs')">Continue to My CNA →</button></div>
 </div>
