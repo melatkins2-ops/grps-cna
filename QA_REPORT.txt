@@ -1,21 +1,11 @@
-GRPS School Needs & Title I Planning v62 — RUNTIME + VISUAL REPAIR QA
+GRPS School Needs & Title I Planning v63 — RUNTIME STABILITY QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Legacy top strip hidden: PASS
-Required year field retained: PASS
-Required schoolMeta retained: PASS
-Single school selector: PASS
-Different real GRPS photo included: PASS
-Approved photo-right hero: PASS
-Exact Continuous Improvement image embedded inline: PASS
-No external asset folder required: PASS
-Continuous Improvement section retained: PASS
-Four planning cards retained: PASS
+Home forced visible on load: PASS
+School change returns visible Home: PASS
+Global Back no longer fixed: PASS
 Single fixed Home: PASS
-Back controls non-floating: PASS
-Automated Title I classification retained: PASS
-Blandford CNA-only retained: PASS
-Smart Connections retained: PASS
-Requirement 8 retained: PASS
-Global hyperlinks retained: PASS
+Continuous Improvement embedded inline: PASS
+Approved draft content retained: PASS
+Program automation retained: PASS
