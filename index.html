@@ -1266,6 +1266,9 @@ body.non-title-i .approved-step.step2,body.non-title-i .approved-step.step3,body
 
 /* v73 — Need-to-Plan logic bridge */
 .logic-intro{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 20px}.logic-intro .logic-step{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fbfdff}.logic-intro b{display:block;color:#143c6f;margin-bottom:4px}.logic-priority{border:1px solid #cfdbe6;border-radius:14px;padding:18px;margin:14px 0;background:#fff}.logic-priority h3{margin:0 0 7px;color:#153a5d}.logic-context{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0 14px}.logic-context>div{background:#f6f9fc;border-radius:10px;padding:11px;font-size:12px;line-height:1.45;color:#49657d}.logic-context b{color:#17324d}.logic-builder{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.logic-builder label{display:block;border-radius:11px;padding:12px;background:#f9fbfd;border:1px solid #d6e1ea}.logic-builder label:nth-child(1){border-top:4px solid #0b6bd6}.logic-builder label:nth-child(2){border-top:4px solid #ef7c22}.logic-builder label:nth-child(3){border-top:4px solid #3f8064}.logic-word{display:block;font-size:19px;font-weight:900;color:#143c6f;margin-bottom:2px}.logic-help{display:block;font-size:11px;color:#667d91;line-height:1.35;min-height:31px;margin-bottom:8px}.logic-builder textarea{min-height:112px;background:#fff}.logic-preview{margin-top:12px;border-left:4px solid var(--navy);background:#f3f7fb;padding:11px 13px;border-radius:8px;font-size:12px;line-height:1.5;color:#36556e}.logic-preview b{color:#17324d}.logic-empty{padding:20px;border:1px dashed #b9c8d6;border-radius:12px;text-align:center;color:#6b7d8f}.logic-note{border-left:4px solid var(--orange);background:#fff9f4;padding:11px 13px;border-radius:8px;margin:12px 0;font-size:12px;line-height:1.48}.logic-actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:18px}@media(max-width:900px){.logic-intro,.logic-builder,.logic-context{grid-template-columns:1fr}}
+
+/* v75: radically simplified model sample */
+.sample-lite-intro{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 24px;border:1px solid #cfe0ef;border-radius:18px;background:#f7fbff;margin:18px 0}.sample-lite-intro h3{margin:6px 0 6px}.sample-lite-intro p{margin:0;max-width:760px}.sample-stepper{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:18px 0 22px}.sample-step-tab{border:1px solid #caddeb;background:#fff;color:#163e73;border-radius:999px;padding:10px 12px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}.sample-step-tab span{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#edf4fa}.sample-step-tab.active{background:#0b5da8;color:#fff;border-color:#0b5da8}.sample-step-tab.active span{background:#fff;color:#0b5da8}.sample-step-panel{display:none}.sample-step-panel.active{display:block}.sample-focus-card{max-width:880px;margin:0 auto;border:1px solid #d5e3ee;border-radius:20px;padding:28px 30px;background:#fff;box-shadow:0 6px 20px rgba(17,62,111,.06)}.sample-focus-card h3{font-size:1.5rem;margin:8px 0 20px}.sample-two-findings{display:grid;grid-template-columns:1fr 1fr;gap:14px}.sample-two-findings>div,.sample-evidence-mini>div{border-radius:14px;background:#f4f8fb;padding:16px}.sample-two-findings b,.sample-two-findings span,.sample-evidence-mini b,.sample-evidence-mini span{display:block}.sample-two-findings span,.sample-evidence-mini span{margin-top:4px;color:#466b91}.sample-takeaway{margin:20px 0 0;padding:14px 16px;border-left:4px solid #f28c28;background:#fff8f0;border-radius:10px}.sample-evidence-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.sample-logic-strip{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:16px 18px;background:#f4f8fb;border-radius:14px;margin:10px 0}.sample-logic-strip b{color:#0b4f8a}.sample-priority-callout{padding:18px;background:#eef6fc;border-radius:14px;font-size:1.08rem}.sample-ifthen{display:grid;gap:10px}.sample-ifthen>div{display:grid;grid-template-columns:105px 1fr;gap:12px;padding:15px 18px;border-radius:14px;background:#f4f8fb}.sample-ifthen b{color:#0b4f8a}.sample-nav-row{max-width:880px;margin:16px auto 0;display:flex;justify-content:space-between;gap:12px}.sample-footer-note{text-align:center;margin:24px 0 8px;color:#4d6d8c}.linklike{border:0;background:none;color:#076bc7;font-weight:800;text-decoration:underline;cursor:pointer;font:inherit}.sample-full-text{max-width:880px;margin:12px auto}.sample-more{margin-top:16px}.sample-more summary{cursor:pointer;font-weight:800;color:#0b5da8}@media(max-width:760px){.sample-lite-intro{display:block}.sample-lite-intro .primary{margin-top:16px;width:100%}.sample-stepper{grid-template-columns:1fr}.sample-step-tab{justify-content:flex-start}.sample-focus-card{padding:20px}.sample-two-findings,.sample-evidence-mini{grid-template-columns:1fr}.sample-logic-strip,.sample-ifthen>div{grid-template-columns:1fr}.sample-nav-row{flex-direction:column}.sample-nav-row button{width:100%}}
 </style>
 
 <style id="v71-mde-cycle-links">
@@ -1767,57 +1770,97 @@ body.non-title-i .approved-step.step2,body.non-title-i .approved-step.step3,body
 </div>
 <div id="sample" class="view panel">
   <div class="kicker">MODEL EXAMPLE</div>
-  <h2>What a strong completed CNA looks like</h2>
-  <div class="sample-banner">
-    <div class="sample-tag">Illustrative example — not actual school results</div>
-    <h3 style="margin:3px 0 7px">Sample GRPS Middle School | 2026–27 CNA</h3>
-    <p style="margin:0">This example models the level of evidence, analysis, prioritization, and writing expected in a high-quality CNA. The numbers and findings below are intentionally illustrative. Schools should replace them with their own verified evidence.</p>
-  </div>
-
-  <div class="sample-section-lead"><h3>1. What the team learned from the four data types</h3><span>Scan the key finding first. Open details only when needed.</span></div>
-  <div class="sample-scan">
-    <div class="sample-scan-card"><div class="sample-tag">Demographic Data</div><h3>Attendance is the clearest access issue.</h3><p class="sample-key"><b>Key finding:</b> Chronic absence is 41% and is highest in grades 7–8, with some groups overrepresented.</p><details class="sample-more"><summary>See evidence & pattern</summary><p><b>Evidence:</b> Enrollment/subgroup trends, chronic absence, mobility, attendance by grade, special-population rosters.</p><p>The pattern begins early in the year rather than appearing only after winter.</p></details></div>
-    <div class="sample-scan-card"><div class="sample-tag">Achievement / Outcome</div><h3>Literacy performance is uneven.</h3><p class="sample-key"><b>Key finding:</b> Informational-text and written-response weaknesses recur, especially among scholars with inconsistent attendance.</p><details class="sample-more"><summary>See evidence & pattern</summary><p><b>Evidence:</b> NWEA reading, M-STEP ELA, course performance, common assessments, MTSS progress monitoring.</p><p>Scholars missing 10% or more instructional days show substantially lower course success.</p></details></div>
-    <div class="sample-scan-card"><div class="sample-tag">Process Data</div><h3>Good practices are not yet consistent.</h3><p class="sample-key"><b>Key finding:</b> Common assessments and attendance processes exist, but follow-through varies by grade and team.</p><details class="sample-more"><summary>See evidence & pattern</summary><p><b>Evidence:</b> PLC agendas, intervention rosters, attendance-team records, walkthroughs, family-contact logs, master schedule.</p><p>Early attendance signals do not consistently trigger barrier identification; progress-monitoring and exit criteria also vary.</p></details></div>
-    <div class="sample-scan-card"><div class="sample-tag">Perception Data</div><h3>Relationships are a strength.</h3><p class="sample-key"><b>Key finding:</b> Most scholars identify a trusted adult, but grade 8 belonging and proactive family communication are weaker.</p><details class="sample-more"><summary>See evidence & pattern</summary><p><b>Evidence:</b> Scholar voice, family feedback, staff survey, focus groups, counseling themes.</p><p>Families value staff responsiveness but describe attendance and academic communication as more reactive than preventive.</p></details></div>
-  </div>
-
-  <div class="sample-card" style="border-left:5px solid #1f6f9f">
-    <div class="sample-tag">Cross-data synthesis</div>
-    <h3>Four data types → two connected needs</h3>
-    <p style="margin:0"><b>Attendance/access:</b> inconsistent attendance reduces access to instruction. &nbsp; <b>Literacy:</b> literacy support is not consistently delivered and monitored. The team elevated only needs that repeated across sources, affected scholars, and had causes the school could influence.</p>
-  </div>
-
-  <div class="sample-section-lead"><h3>2. School needs and root causes</h3><span>Need first. Root cause second.</span></div>
-  <div class="sample-need-summary">
-    <div class="sample-need-card"><div class="sample-tag">Need 1 — Attendance & Belonging</div><h3>Build an early-warning and barrier-response system.</h3><div class="sample-line"><b>Gap</b><span>41% chronic absence; follow-through after early warning signs is inconsistent.</span></div><div class="sample-line"><b>Need</b><span>Connect attendance data, scholar/family voice, and matched interventions before absence becomes chronic.</span></div><div class="sample-line"><b>Root cause</b><span>Ownership, barrier documentation, and follow-up expectations are not consistently defined.</span></div><details class="sample-more"><summary>See full example details</summary><p><b>Most affected:</b> Grades 7–8 and scholars experiencing mobility or recurring family/transportation barriers.</p><p><b>Desired state:</b> Concerns are identified early, barriers documented, and support matched before chronic absence develops.</p><p><b>Root-cause evidence:</b> Attendance-team records, contact logs, staff interviews, family feedback, intervention documentation.</p></details></div>
-    <div class="sample-need-card"><div class="sample-tag">Need 2 — Literacy</div><h3>Make literacy instruction and monitoring consistent.</h3><div class="sample-line"><b>Gap</b><span>Persistent informational-text/written-response weakness; intervention response varies.</span></div><div class="sample-line"><b>Need</b><span>Consistent high-leverage literacy practices across core instruction and intervention.</span></div><div class="sample-line"><b>Root cause</b><span>No consistently used instructional response and progress-monitoring cycle tied to identified skills.</span></div><details class="sample-more"><summary>See full example details</summary><p><b>Most affected:</b> Scholars below benchmark, especially those with inconsistent attendance or limited growth after initial intervention.</p><p><b>Desired state:</b> Grade-level instruction plus timely evidence-based support with common progress monitoring.</p><p><b>Root-cause evidence:</b> Common assessments, walkthroughs, PLC artifacts, intervention plans, progress monitoring, scholar work.</p></details></div>
-  </div>
-
-  <div class="sample-section-lead"><h3>3. Final priorities</h3><span>Only the highest-leverage needs move forward.</span></div>
-  <div class="sample-grid">
-    <div class="sample-card sample-priority"><div class="sample-tag">Priority 1</div><h3>Early Attendance & Belonging Response</h3><p><b>Focus:</b> Early warning → relationship-based outreach → barrier identification → matched support.</p><details class="sample-more"><summary>Why this priority + measures</summary><p><b>Why:</b> It affects access to every other improvement effort, appears across all four data types, and has school-influenceable causes.</p><p><b>Measures:</b> Chronic absence, movement into chronic absence, attendance by grade/subgroup, time from signal to outreach, barrier resolution, belonging.</p></details></div>
-    <div class="sample-card sample-priority"><div class="sample-tag">Priority 2</div><h3>Consistent Literacy Instruction & Intervention</h3><p><b>Focus:</b> Common high-leverage literacy practices + common progress-monitoring cycle.</p><details class="sample-more"><summary>Why this priority + measures</summary><p><b>Why:</b> The need appears in state, benchmark, classroom, and process evidence and is tied to an implementation gap the school can address.</p><p><b>Measures:</b> NWEA growth, M-STEP ELA, common-assessment mastery, intervention response, course success, walkthrough evidence.</p></details></div>
-  </div>
-
-  <div class="sample-section-lead"><h3>4. Completed CNA Story</h3><span>Five short ideas tell the full story.</span></div>
-  <div class="sample-card sample-story">
-    <div class="sample-tag">Executive-quality data story</div>
-    <div class="sample-story-points">
-      <div class="sample-story-point"><b>Strength</b>Strong relationships, committed staff, common assessments, and existing intervention structures.</div>
-      <div class="sample-story-point"><b>Evidence</b>Attendance limits access to instruction; literacy weaknesses recur across several measures.</div>
-      <div class="sample-story-point"><b>Need</b>Earlier attendance/barrier response and more consistent literacy instruction and monitoring.</div>
-      <div class="sample-story-point"><b>Why</b>Systems identify concerns, but implementation and follow-through are inconsistent.</div>
-      <div class="sample-story-point"><b>Moves forward</b>Two priorities advance into planning—not a list of disconnected programs.</div>
+  <h2>A completed CNA — in five moves</h2>
+  <div class="sample-lite-intro">
+    <div>
+      <div class="sample-tag">Illustrative example — not actual school results</div>
+      <h3>Sample GRPS Middle School | 2026–27</h3>
+      <p>Use this as a quick model. Move through one step at a time; open details only if you want to see the evidence behind the example.</p>
     </div>
-    <details class="sample-more" style="margin-top:12px"><summary>Read the full sample CNA story</summary><p><b>Our strengths.</b> The school has a strong relational foundation. Most scholars report having a trusted adult, staff demonstrate commitment to scholars, and teams already use common assessments and intervention structures.</p><p><b>What the evidence says.</b> Chronic absence is high and concentrated among specific groups and grade levels. Literacy evidence also shows recurring difficulty with informational text and written response.</p><p><b>What our school needs.</b> A reliable early attendance and barrier-response system, and more consistent literacy instruction and progress monitoring across core and intervention settings.</p><p><b>Why the needs exist.</b> Current systems identify concerns, but implementation is not sufficiently consistent. These are conditions the school can influence.</p><p><b>What moves forward.</b> Early Attendance & Belonging Response and Consistent Literacy Instruction & Intervention move into improvement planning.</p></details>
+    <button class="primary" type="button" onclick="showSampleStep(1)">Start the 60-second walkthrough →</button>
   </div>
 
-  <div class="sample-banner">
-    <h3 style="margin:0 0 7px">Why this is a strong CNA</h3>
-    <p style="margin:0">It triangulates the four data types, narrows the work to a few needs, separates needs from strategies, tests root causes with evidence, and carries only the highest-leverage priorities into planning.</p>
+  <div class="sample-stepper" aria-label="Sample CNA steps">
+    <button class="sample-step-tab active" data-sample-step="1" onclick="showSampleStep(1)"><span>1</span>Evidence</button>
+    <button class="sample-step-tab" data-sample-step="2" onclick="showSampleStep(2)"><span>2</span>Need</button>
+    <button class="sample-step-tab" data-sample-step="3" onclick="showSampleStep(3)"><span>3</span>Why</button>
+    <button class="sample-step-tab" data-sample-step="4" onclick="showSampleStep(4)"><span>4</span>Priority</button>
+    <button class="sample-step-tab" data-sample-step="5" onclick="showSampleStep(5)"><span>5</span>Plan</button>
   </div>
-  <div class="actions"><button class="secondary" onclick="show('home')">← Back to Home</button><button class="primary" onclick="show('needs')">Continue to My CNA →</button></div>
+
+  <div class="sample-step-panel active" data-sample-panel="1">
+    <div class="sample-focus-card">
+      <div class="sample-tag">STEP 1 — EVIDENCE</div>
+      <h3>What did the team notice?</h3>
+      <div class="sample-two-findings">
+        <div><b>Attendance</b><span>Chronic absence is high, especially in grades 7–8.</span></div>
+        <div><b>Literacy</b><span>Reading and written-response weaknesses repeat across several measures.</span></div>
+      </div>
+      <p class="sample-takeaway"><b>Takeaway:</b> Different data sources are pointing to the same two concerns.</p>
+      <details class="sample-more"><summary>See the four data types behind this conclusion</summary>
+        <div class="sample-evidence-mini">
+          <div><b>Demographic</b><span>Attendance, mobility, subgroup patterns.</span></div>
+          <div><b>Outcome</b><span>NWEA, M-STEP ELA, course performance.</span></div>
+          <div><b>Process</b><span>Follow-through varies across teams.</span></div>
+          <div><b>Perception</b><span>Relationships are strong; belonging and communication are less consistent.</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="sample-nav-row"><span></span><button class="primary" onclick="showSampleStep(2)">Next: Define the Need →</button></div>
+  </div>
+
+  <div class="sample-step-panel" data-sample-panel="2">
+    <div class="sample-focus-card">
+      <div class="sample-tag">STEP 2 — NEED</div>
+      <h3>Turn the pattern into a school need.</h3>
+      <div class="sample-logic-strip"><b>Gap</b><span>41% chronic absence and inconsistent follow-through after early warning signs.</span></div>
+      <div class="sample-logic-strip"><b>Need</b><span>A reliable early-warning and barrier-response system that acts before absence becomes chronic.</span></div>
+      <p class="sample-takeaway"><b>Takeaway:</b> The need describes what must improve—not the program the school plans to buy or implement.</p>
+    </div>
+    <div class="sample-nav-row"><button class="secondary" onclick="showSampleStep(1)">← Evidence</button><button class="primary" onclick="showSampleStep(3)">Next: Find the Why →</button></div>
+  </div>
+
+  <div class="sample-step-panel" data-sample-panel="3">
+    <div class="sample-focus-card">
+      <div class="sample-tag">STEP 3 — WHY</div>
+      <h3>Identify the root cause the school can influence.</h3>
+      <div class="sample-logic-strip"><b>Root cause</b><span>Ownership, barrier documentation, and follow-up expectations are not consistently defined.</span></div>
+      <p class="sample-takeaway"><b>Takeaway:</b> Root cause comes after the need so the team does not jump straight to a solution.</p>
+      <details class="sample-more"><summary>What evidence would confirm this?</summary><p>Attendance-team records, contact logs, staff interviews, family feedback, and intervention documentation.</p></details>
+    </div>
+    <div class="sample-nav-row"><button class="secondary" onclick="showSampleStep(2)">← Need</button><button class="primary" onclick="showSampleStep(4)">Next: Set the Priority →</button></div>
+  </div>
+
+  <div class="sample-step-panel" data-sample-panel="4">
+    <div class="sample-focus-card">
+      <div class="sample-tag">STEP 4 — PRIORITY</div>
+      <h3>Only the highest-leverage need moves forward.</h3>
+      <div class="sample-priority-callout"><b>Priority:</b> Early Attendance & Belonging Response</div>
+      <p>Focus the work on early warning, relationship-based outreach, barrier identification, and matched support.</p>
+      <p class="sample-takeaway"><b>Takeaway:</b> A strong CNA narrows the work. It does not produce a long list of disconnected initiatives.</p>
+    </div>
+    <div class="sample-nav-row"><button class="secondary" onclick="showSampleStep(3)">← Why</button><button class="primary" onclick="showSampleStep(5)">Next: Connect to the Plan →</button></div>
+  </div>
+
+  <div class="sample-step-panel" data-sample-panel="5">
+    <div class="sample-focus-card">
+      <div class="sample-tag">STEP 5 — PLAN</div>
+      <h3>Connect the priority to the strategy and expected result.</h3>
+      <div class="sample-ifthen">
+        <div><b>IF we…</b><span>use early warning data and relationship-based outreach to identify barriers quickly,</span></div>
+        <div><b>THEN…</b><span>teams will respond earlier and more consistently,</span></div>
+        <div><b>SO THAT…</b><span>fewer scholars move into chronic absence and more scholars have consistent access to instruction.</span></div>
+      </div>
+      <p class="sample-takeaway"><b>That is the full CNA story:</b> Evidence → Need → Root Cause → Priority → Plan.</p>
+    </div>
+    <div class="sample-nav-row"><button class="secondary" onclick="showSampleStep(4)">← Priority</button><button class="primary" onclick="show('needs')">Start My CNA →</button></div>
+  </div>
+
+  <div class="sample-footer-note">Want the detailed model? <button class="linklike" type="button" onclick="toggleFullSample()">Show the full written example</button></div>
+  <div id="fullSampleText" class="sample-full-text" hidden>
+    <div class="sample-card"><h3>Full written example</h3><p><b>Evidence:</b> Chronic absence is high and concentrated among specific groups and grade levels. Literacy evidence also shows recurring difficulty with informational text and written response. Process and perception evidence suggest current systems identify concerns, but implementation and follow-through are inconsistent.</p><p><b>Need:</b> The school needs a reliable early attendance and barrier-response system and more consistent literacy instruction and progress monitoring.</p><p><b>Root cause:</b> Ownership, follow-up expectations, instructional response, and progress-monitoring routines are not consistently defined or implemented.</p><p><b>Priorities:</b> Early Attendance & Belonging Response and Consistent Literacy Instruction & Intervention.</p></div>
+  </div>
+  <div class="actions"><button class="secondary" onclick="show('home')">← Back to Home</button></div>
 </div>
 
 </section>
@@ -3144,6 +3187,18 @@ window.addEventListener('load',()=>{
   }catch(e){ console.error('Approved build startup check',e); }
 });
 
+
+function showSampleStep(step){
+  document.querySelectorAll('.sample-step-panel').forEach(p=>p.classList.toggle('active',p.dataset.samplePanel==String(step)));
+  document.querySelectorAll('.sample-step-tab').forEach(b=>b.classList.toggle('active',b.dataset.sampleStep==String(step)));
+  const panel=document.querySelector(`.sample-step-panel[data-sample-panel="${step}"]`);
+  if(panel)panel.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function toggleFullSample(){
+  const el=document.getElementById('fullSampleText');
+  if(!el)return;
+  el.hidden=!el.hidden;
+}
 </script>
 
 <button id="globalBackBtn" class="global-back-btn" type="button" aria-label="Go back to the previous CNA page">
