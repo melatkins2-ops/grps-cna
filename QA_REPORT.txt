@@ -1,21 +1,21 @@
-GRPS School Needs & Title I Planning v61 — APPROVED DRAFT MATCH QA
+GRPS School Needs & Title I Planning v62 — RUNTIME + VISUAL REPAIR QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Approved draft header: PASS
-Approved draft hero structure: PASS
-No people photo in hero: PASS
-School card in hero: PASS
-Four colored planning cards: PASS
-Exact Continuous Improvement image packaged: PASS
-Continuous Improvement visible on home: PASS
-Quick Links section: PASS
-Tools for Impact section: PASS
-GRPS footer band: PASS
+Legacy top strip hidden: PASS
+Required year field retained: PASS
+Required schoolMeta retained: PASS
+Single school selector: PASS
+Different real GRPS photo included: PASS
+Approved photo-right hero: PASS
+Exact Continuous Improvement image embedded inline: PASS
+No external asset folder required: PASS
+Continuous Improvement section retained: PASS
+Four planning cards retained: PASS
 Single fixed Home: PASS
-Back forced into flow: PASS
-Program automation retained: PASS
+Back controls non-floating: PASS
+Automated Title I classification retained: PASS
 Blandford CNA-only retained: PASS
 Smart Connections retained: PASS
 Requirement 8 retained: PASS
-Hyperlink support retained: PASS
+Global hyperlinks retained: PASS
