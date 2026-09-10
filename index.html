@@ -1320,6 +1320,31 @@ body.non-title-i .pu-choice-card:nth-child(3),
 body.non-title-i .pu-dashboard-grid button:nth-child(2),
 body.non-title-i .pu-dashboard-grid button:nth-child(3),
 body.non-title-i .pu-dashboard-grid button:nth-child(4){opacity:.42;pointer-events:none}
+
+/* v59 approved Parent University direction — build pass */
+.pu-cycle-section{padding:0 6vw 58px;max-width:1500px;margin:auto}
+.pu-cycle-card{max-width:1320px;margin:auto;display:grid;grid-template-columns:240px 1fr;gap:34px;align-items:center;
+  border:1px solid var(--pu-line);border-radius:18px;padding:26px 30px;background:#fff;box-shadow:0 8px 24px rgba(13,59,102,.06)}
+.pu-cycle-visual{display:flex;justify-content:center;align-items:center}
+.pu-cycle-visual img{display:block;width:100%;max-width:210px;height:auto;object-fit:contain}
+.pu-cycle-copy h2{margin:0 0 10px;color:var(--pu-blue);font-size:1.8rem}
+.pu-cycle-copy>p{color:var(--pu-muted);max-width:780px}
+.pu-cycle-more{margin-top:16px;border-top:1px solid var(--pu-line);padding-top:13px}
+.pu-cycle-more summary{cursor:pointer;color:var(--pu-blue);font-weight:900}
+.pu-cycle-more div{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-top:14px}
+.pu-cycle-more div p{margin:0;background:var(--pu-soft);border-radius:10px;padding:11px;font-size:.78rem;line-height:1.35;color:#536575}
+.cycle-placeholder{font-size:.8rem;text-align:center;color:var(--pu-blue);font-weight:900}
+.persistent-home-button{position:fixed!important;right:22px!important;bottom:22px!important;z-index:1200!important}
+.back-link,.floating-back,.persistent-back-button,[data-action="back"]{
+  position:static!important;right:auto!important;bottom:auto!important;left:auto!important;top:auto!important;
+  margin:0 0 16px!important;transform:none!important
+}
+body button[onclick*="history.back"]{position:static!important;right:auto!important;bottom:auto!important;transform:none!important}
+@media(max-width:760px){
+ .pu-cycle-section{padding:0 20px 44px}.pu-cycle-card{grid-template-columns:1fr;padding:22px}.pu-cycle-visual img{max-width:170px}
+ .pu-cycle-more div{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -1354,7 +1379,7 @@ body.non-title-i .pu-dashboard-grid button:nth-child(4){opacity:.42;pointer-even
 
   <main class="main">
     <div class="topbar">
-      <div class="top-title"><h1>GRPS School Needs &amp; Title I Planning</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v58</span></div></div>
+      <div class="top-title"><h1>GRPS School Needs &amp; Title I Planning</h1><div class="tag">UNDERSTAND TODAY. PLAN WHAT MATTERS NEXT. <span style="opacity:.65">• PILOT v59</span></div></div>
       <div class="school-card">
         <label for="schoolSelect">SCHOOL</label>
         <select id="schoolSelect" style="border:0;background:transparent;color:#17324d;font-weight:700;width:100%;outline:none;margin:4px 0 8px">
@@ -1496,7 +1521,29 @@ body.non-title-i .pu-dashboard-grid button:nth-child(4){opacity:.42;pointer-even
     </div>
   </section>
 
-  <section class="pu-promise-band">
+  
+<section class="pu-cycle-section" id="continuousImprovement">
+  <div class="pu-cycle-card">
+    <div class="pu-cycle-visual"><img src="assets/continuous-improvement-cycle.png" alt="GRPS Continuous Improvement Cycle: Assess Needs, Plan, Implement, Monitor, and Evaluate"></div>
+    <div class="pu-cycle-copy">
+      <p class="pu-eyebrow">CONTINUOUS IMPROVEMENT</p>
+      <h2>This work is part of a larger cycle.</h2>
+      <p>The CNA begins with <strong>Assess Needs</strong>. The priorities identified here should carry into planning, implementation, monitoring, and evaluation—not sit in a separate document.</p>
+      <details class="pu-cycle-more">
+        <summary>Learn more about the Continuous Improvement Cycle</summary>
+        <div>
+          <p><strong>Assess Needs:</strong> Use multiple sources of evidence to identify the most important school needs.</p>
+          <p><strong>Plan:</strong> Select strategies and supports that directly respond to the identified needs.</p>
+          <p><strong>Implement:</strong> Put the plan into practice with clear ownership, resources, and expectations.</p>
+          <p><strong>Monitor:</strong> Check implementation and interim evidence so the team can adjust while the work is underway.</p>
+          <p><strong>Evaluate:</strong> Determine what changed, what worked, and what should continue, change, or stop.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="pu-promise-band">
     <div>
       <p class="pu-eyebrow light">ONE CONNECTED PROCESS</p>
       <h2>Enter the need once. Use it throughout the plan.</h2>

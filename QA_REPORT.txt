@@ -1,16 +1,16 @@
-GRPS School Needs & Title I Planning v58 — PARENT UNIVERSITY STRUCTURE QA
+GRPS School Needs & Title I Planning v59 — BUILD QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Parent University-style two-column hero: PASS
-Parent University-style pathway band: PASS
-Parent University-style dashboard: PASS
-Parent University-style blue/orange palette: PASS
-Large responsive hero headline: PASS
-Single persistent Home: PASS
-CNA hub retained: PASS
-Program automation retained: PASS
-Blandford CNA-only routing retained: PASS
+Parent University structure retained: PASS
+Continuous Improvement section added: PASS
+Cycle is secondary/not dominant: PASS
+Cycle has expandable additional information: PASS
+Single persistent Home button: PASS
+Back controls forced into flow: PASS
+Automated Title I routing retained: PASS
+Blandford no-Title-I behavior retained: PASS
 Smart Connections retained: PASS
-Requirement 8 documents retained: PASS
-Global hyperlink support retained: PASS
+Requirement 8 workspace retained: PASS
+Hyperlink support retained: PASS
+User Continuous Improvement image packaged: PASS
