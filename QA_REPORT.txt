@@ -1,19 +1,16 @@
-GRPS School Needs & Title I Planning v56 — WORKFLOW REDESIGN QA
+GRPS School Needs & Title I Planning v58 — PARENT UNIVERSITY STRUCTURE QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-New universal site title: PASS
-Legacy sidebar hidden: PASS
-Four-step workflow: PASS
-Minimal home primary card: PASS
-CNA workspace created: PASS
-School starting data moved into CNA workspace: PASS
-Four data type launcher moved into CNA workspace: PASS
-Non-Title I CNA-only message: PASS
-Schoolwide routing message: PASS
-Targeted routing message: PASS
-Home button retained: PASS
-Automated program classifications retained: PASS
-Global hyperlinks retained: PASS
+Parent University-style two-column hero: PASS
+Parent University-style pathway band: PASS
+Parent University-style dashboard: PASS
+Parent University-style blue/orange palette: PASS
+Large responsive hero headline: PASS
+Single persistent Home: PASS
+CNA hub retained: PASS
+Program automation retained: PASS
+Blandford CNA-only routing retained: PASS
 Smart Connections retained: PASS
-Requirement 8 retained: PASS
+Requirement 8 documents retained: PASS
+Global hyperlink support retained: PASS
