@@ -1,20 +1,21 @@
-GRPS School Needs & Title I Planning v64 — APPROVED SCHOLAR BUILD QA
+GRPS School Needs & Title I Planning v65 — APPROVED DESIGN + ERROR AUDIT
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Built from stable v55 runtime: PASS
-Approved scholar-photo hero: PASS
-Exact Continuous Improvement image embedded: PASS
-CNA hub created: PASS
-Four planning path cards: PASS
-Quick Links: PASS
-Tools for Impact: PASS
-Back collision removed: PASS
-Single fixed Home button: PASS
-Automated Title I routing retained: PASS
-Blandford CNA-only retained: PASS
+No missing show() targets: PASS
+No missing onclick functions: PASS
+Single school selector: PASS
+Approved GRPS scholar image URL: PASS
+No raw ? glyph used as Help icon: PASS
+Accessible SVG Help icon: PASS
+Four polished planning icons: PASS
+Continuous Improvement image still embedded: PASS
+Continuous Improvement section visible: PASS
+Single persistent Home: PASS
+Global floating Back hidden: PASS
+All school/programs classified: PASS
+40 Schoolwide / 3 Targeted / 1 Non-Title I: PASS
+Blandford CNA-only rule retained: PASS
 Smart Connections retained: PASS
 Requirement 8 retained: PASS
-Global hyperlinks retained: PASS
-
-NOTE: Visual/browser rendering was not claimed; QA covers structure, JavaScript syntax, IDs, routing hooks, and required content/assets.
+Global hyperlink support retained: PASS
