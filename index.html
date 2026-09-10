@@ -1157,6 +1157,7 @@ body.non-title-i #programTypeBanner{display:none!important}
 .sidecol{display:none!important}
 .approved-compat,.approved-hidden-runtime{display:none!important}
 
+#globalBackBtn[hidden]{display:none!important}
 #globalBackBtn{
   display:inline-flex!important;
   position:fixed!important;
@@ -1406,21 +1407,21 @@ body.non-title-i .approved-step.step2,body.non-title-i .approved-step.step3,body
     </article>
 
     <article class="approved-link-card">
-      <h2>🔗 Quick Links</h2>
-      <p>Helpful resources to support your planning work.</p>
-      <button onclick="show('cnaHub')"><b>▥ School Data</b><span>Enrollment, attendance, assessment data and more.</span><i>→</i></button>
-      <button onclick="show('req8')"><b>♟ Family &amp; Community Resources</b><span>Strategies and supports for families.</span><i>→</i></button>
-      <button onclick="show('crosswalk')"><b>▣ Federal Requirements</b><span>Plain-language guidance and key links.</span><i>→</i></button>
-      <button onclick="show('sample')"><b>◉ Tools &amp; Templates</b><span>Ready-to-use planning templates and examples.</span><i>→</i></button>
+      <h2>Continue Your CNA</h2>
+      <p>Go directly to the part of the needs assessment you are ready to work on.</p>
+      <button onclick="show('cnaHub')"><b>Review School Evidence</b><span>Return to the four data types and the evidence gathered for your school.</span><i>→</i></button>
+      <button onclick="show('needs')"><b>Build School Need Statements</b><span>Turn patterns and gaps in the evidence into clear school needs.</span><i>→</i></button>
+      <button onclick="show('why')"><b>Check Root Causes</b><span>Examine why the need exists before selecting a strategy or program.</span><i>→</i></button>
+      <button onclick="show('priorities')"><b>Set School Priorities</b><span>Narrow the CNA to the few needs that should drive the school plan.</span><i>→</i></button>
     </article>
 
     <article class="approved-impact-card">
-      <h2>★ Tools for Impact</h2>
-      <p>Additional resources to help you plan, connect, and take action.</p>
-      <button onclick="show('why')"><b>◎ Identify Root Causes</b><span>Use data and input to get to the why.</span><i>→</i></button>
-      <button onclick="show('req8')"><b>♟ Find Partners</b><span>Connect with GRPS and community supports.</span><i>→</i></button>
-      <button onclick="show('smartConnections')"><b>⚙ Turn Ideas Into Action</b><span>Connect priorities to strategies and requirements.</span><i>→</i></button>
-      <button onclick="show('crosswalk')"><b>★ Celebrate Progress</b><span>Track completion and what is working.</span><i>→</i></button>
+      <h2>Move Into Title I Planning</h2>
+      <p>Use the CNA priorities to complete the parts of the Title I plan that apply to your school.</p>
+      <button onclick="show('planBuilder')"><b>Open the Title I Plan</b><span>Work through the applicable Title I program requirements.</span><i>→</i></button>
+      <button onclick="show('smartConnections')"><b>See CNA → Title I Connections</b><span>See which requirements are connected to the priorities identified in the CNA.</span><i>→</i></button>
+      <button onclick="show('req8')"><b>Parent &amp; Family Engagement Documents</b><span>Complete or upload the Parent &amp; Family Engagement Plan and School-Parent Compact.</span><i>→</i></button>
+      <button onclick="show('crosswalk')"><b>Review Before Finalizing</b><span>Check completion and the compliance crosswalk before the plan is finalized.</span><i>→</i></button>
     </article>
   </section>
 
@@ -1801,7 +1802,7 @@ let currentDomain=null;
 
 state.sourceChecks=state.sourceChecks||{}; state.evidenceTypes=state.evidenceTypes||{}; state.qualityChecks=state.qualityChecks||{};
 function save(){state.school=$('schoolSelect').value;state.year=$('year').value;try{localStorage.setItem('grpsCNA',JSON.stringify(state))}catch(e){console.warn('Autosave unavailable.',e)}updateStats()}
-function show(id){if(id!=='nonTitleI' && !guardTitleIView(id))return;const currentView=document.querySelector('.view.active')?.id;if(currentView&&currentView!==id&&!window.CNA_BACK_NAV){window.CNA_VIEW_HISTORY=window.CNA_VIEW_HISTORY||[];window.CNA_VIEW_HISTORY.push(currentView);if(window.CNA_VIEW_HISTORY.length>20)window.CNA_VIEW_HISTORY.shift();}document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));const el=$(id);if(el)el.classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='home'||id==='cnaHub')renderCards();if(id==='needs')renderNeeds();if(id==='why')renderWhy();if(id==='priorities')renderPriorities();if(id==='story')renderStory();if(id==='req8'){renderReq8Status();renderReq8Uploads();renderPFEContext();}if(id==='smartConnections')renderSmartConnections();if(id==='planBuilder')renderPlanBuilder();if(id==='crosswalk')renderCrosswalk();if(id==='finalPlan')renderTitleIReadiness();if(/^req[2-9]$/.test(id)){renderSmartCarryForward();}window.scrollTo(0,0)}
+function show(id){if(id!=='nonTitleI' && !guardTitleIView(id))return;const currentView=document.querySelector('.view.active')?.id;if(currentView&&currentView!==id&&!window.CNA_BACK_NAV){window.CNA_VIEW_HISTORY=window.CNA_VIEW_HISTORY||[];window.CNA_VIEW_HISTORY.push(currentView);if(window.CNA_VIEW_HISTORY.length>20)window.CNA_VIEW_HISTORY.shift();}document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));const el=$(id);if(el)el.classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='home'||id==='cnaHub')renderCards();if(id==='needs')renderNeeds();if(id==='why')renderWhy();if(id==='priorities')renderPriorities();if(id==='story')renderStory();if(id==='req8'){renderReq8Status();renderReq8Uploads();renderPFEContext();}if(id==='smartConnections')renderSmartConnections();if(id==='planBuilder')renderPlanBuilder();if(id==='crosswalk')renderCrosswalk();if(id==='finalPlan')renderTitleIReadiness();if(/^req[2-9]$/.test(id)){renderSmartCarryForward();}window.scrollTo(0,0);if(typeof updateGlobalBackVisibility==='function')updateGlobalBackVisibility()}
 function domainCompletion(d){let n=0;d.prompts.forEach((p,i)=>{const a=state.answers[d.id+'_'+i]||{};if((a.note&&a.note.trim())||a.choice)n++});return{done:n,total:d.prompts.length}}
 
 function schoolMetricValue(m,suffix=''){
@@ -2501,20 +2502,38 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 
 
 
-(function(){
+function initGlobalBackButton(){
   const btn=document.getElementById('globalBackBtn');
-  if(!btn)return;
+  if(!btn || btn.dataset.bound==='true') return;
+  btn.dataset.bound='true';
   window.CNA_VIEW_HISTORY=window.CNA_VIEW_HISTORY||[];
-  btn.addEventListener('click',()=>{
-    const previous=window.CNA_VIEW_HISTORY.pop();
+  btn.addEventListener('click',function(e){
+    e.preventDefault();
+    const current=document.querySelector('.view.active')?.id||'';
+    let previous=window.CNA_VIEW_HISTORY.pop();
+    while(previous===current && window.CNA_VIEW_HISTORY.length){
+      previous=window.CNA_VIEW_HISTORY.pop();
+    }
     window.CNA_BACK_NAV=true;
     try{
-      if(previous && typeof window.show==='function') window.show(previous);
-      else if(typeof window.show==='function') window.show('home');
-      else window.scrollTo({top:0,behavior:'smooth'});
-    }finally{window.CNA_BACK_NAV=false;}
+      if(previous && document.getElementById(previous) && typeof show==='function') show(previous);
+      else if(typeof show==='function') show('home');
+      else window.location.hash='';
+    }finally{
+      window.CNA_BACK_NAV=false;
+      updateGlobalBackVisibility();
+    }
   });
-})();
+  updateGlobalBackVisibility();
+}
+function updateGlobalBackVisibility(){
+  const btn=document.getElementById('globalBackBtn');
+  if(!btn)return;
+  const current=document.querySelector('.view.active')?.id||'home';
+  btn.hidden=(current==='home');
+}
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initGlobalBackButton);
+else initGlobalBackButton();
 
 
 const TITLEI_PLAN_KEY='grpsTitleIPlan_v1';
