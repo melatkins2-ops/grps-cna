@@ -1,17 +1,19 @@
-GRPS School Needs & Title I Planning v66 — GRPS SCHOLAR + BACK RESTORED
+GRPS School Needs & Title I Planning v67 — QA
 
-JavaScript syntax: PASS
-No duplicate IDs: PASS
-Prior-uploaded GRPS scholar photo embedded: PASS
-Sports web image removed: PASS
-Back button restored: PASS
-Back and Home separated: PASS
-Continuous Improvement Cycle retained: PASS
-Title I classification retained: PASS
-Blandford CNA-only logic retained: PASS
-Smart Connections retained: PASS
-Requirement 8 retained: PASS
-Hyperlink support retained: PASS
+PASS — official GRPS hands-on hero URL
+PASS — old personal base64 removed
+PASS — continuous improvement retained
+PASS — back button retained
+PASS — back tracks actual show()
+PASS — Title I key retained
+PASS — CNA key retained
+PASS — Requirement 8 retained
+PASS — Smart Connections retained
+PASS — global links retained
+PASS — no duplicate IDs
+PASS — JavaScript syntax
 
-Source photo: prior user-uploaded image 359E35DF-6470-4B2F-8552-4A24096761FF.jpeg.
-Visual browser rendering is not claimed; QA covers source structure and JavaScript.
+Duplicate IDs: none
+Node syntax output: none
+
+Visual note: hero uses the official GRPS Gone Boarding story image URL. Static/source QA completed; browser-render QA is not claimed.
