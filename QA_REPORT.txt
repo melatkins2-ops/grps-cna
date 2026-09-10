@@ -1,21 +1,17 @@
-GRPS School Needs & Title I Planning v65 — APPROVED DESIGN + ERROR AUDIT
+GRPS School Needs & Title I Planning v66 — GRPS SCHOLAR + BACK RESTORED
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-No missing show() targets: PASS
-No missing onclick functions: PASS
-Single school selector: PASS
-Approved GRPS scholar image URL: PASS
-No raw ? glyph used as Help icon: PASS
-Accessible SVG Help icon: PASS
-Four polished planning icons: PASS
-Continuous Improvement image still embedded: PASS
-Continuous Improvement section visible: PASS
-Single persistent Home: PASS
-Global floating Back hidden: PASS
-All school/programs classified: PASS
-40 Schoolwide / 3 Targeted / 1 Non-Title I: PASS
-Blandford CNA-only rule retained: PASS
+Prior-uploaded GRPS scholar photo embedded: PASS
+Sports web image removed: PASS
+Back button restored: PASS
+Back and Home separated: PASS
+Continuous Improvement Cycle retained: PASS
+Title I classification retained: PASS
+Blandford CNA-only logic retained: PASS
 Smart Connections retained: PASS
 Requirement 8 retained: PASS
-Global hyperlink support retained: PASS
+Hyperlink support retained: PASS
+
+Source photo: prior user-uploaded image 359E35DF-6470-4B2F-8552-4A24096761FF.jpeg.
+Visual browser rendering is not claimed; QA covers source structure and JavaScript.
