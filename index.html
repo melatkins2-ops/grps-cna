@@ -1346,95 +1346,45 @@ body button[onclick*="history.back"]{position:static!important;right:auto!import
 }
 
 
-/* v60 — approved Parent University-style top section */
-.pu-site-header{
-  position:sticky!important;top:0!important;z-index:120!important;height:78px!important;
-  display:flex!important;align-items:center!important;justify-content:space-between!important;gap:24px!important;
-  padding:0 4.5vw!important;background:#fff!important;border-bottom:1px solid #dce4eb!important
-}
-.pu-site-header:before{display:none!important}
-.pu-brand-lockup{display:flex;align-items:center;gap:14px}
-.pu-brand-mark{
-  width:58px;height:44px;border-radius:8px;display:grid;place-items:center;background:#0d4c82;color:#fff;
-  font-weight:1000;font-size:17px;letter-spacing:-.04em;position:relative
-}
-.pu-brand-mark:after{content:"";position:absolute;right:-4px;top:3px;width:5px;height:30px;background:#ed6d23;border-radius:6px;transform:skew(-8deg)}
-.pu-brand-title{font-size:19px;font-weight:950;color:#0d3b66;line-height:1.05}
-.pu-brand-subtitle{font-size:11px;color:#516b80;margin-top:4px}
-.pu-header-nav{display:flex;gap:8px;align-items:center}
-.pu-header-nav button{border:0;background:transparent;color:#0d3b66;font-weight:850;font-size:12px;padding:9px 10px;border-radius:8px}
-.pu-header-nav button:hover{background:#eef5fb}
-.pu-header-nav span{font-size:14px;margin-right:4px}
-.pu-mobile-school-select{display:flex;align-items:center;gap:8px}
-.pu-mobile-school-select label{font-size:9px;font-weight:900;letter-spacing:.07em;color:#657e91;text-transform:uppercase}
-.pu-mobile-school-select select{min-width:220px;border:1px solid #cddbe5;border-radius:9px;padding:8px 10px;background:#f5f9fc;color:#173b5c;font-weight:800}
-
-.approved-hero{
-  position:relative!important;max-width:1500px!important;min-height:460px!important;margin:20px auto 0!important;
-  padding:0!important;display:block!important;border-radius:18px!important;overflow:hidden!important;background:#0e416e!important
-}
-.approved-hero-bg{position:absolute;inset:0 0 0 37%;background-size:cover;background-position:center center;background-repeat:no-repeat}
-.approved-hero-bg:after{
-  content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,59,102,.38),rgba(13,59,102,0) 42%)
-}
-.approved-hero-shade{
-  position:absolute;inset:0;background:linear-gradient(100deg,#0b4777 0%,#0c4d7f 32%,rgba(12,77,127,.82) 42%,rgba(12,77,127,.08) 63%,rgba(12,77,127,0) 100%)
-}
-.approved-hero-copy{
-  position:relative;z-index:2;width:46%;min-height:460px;padding:48px 42px;color:#fff;display:flex;flex-direction:column;justify-content:center
-}
-.approved-hero-copy h1{margin:0 0 16px;color:#fff;font-size:clamp(2.7rem,4.5vw,4.7rem);line-height:.98;letter-spacing:-.04em;max-width:650px}
-.approved-hero-copy h1 span{color:#ff7b25}
-.approved-hero-copy>p:not(.pu-eyebrow){max-width:620px;color:#eaf2f8;font-size:1.02rem;line-height:1.5}
-.approved-hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:22px}
-.approved-hero-actions .pu-primary-btn{font-size:13px;padding:13px 17px!important}
-.hero-secondary{background:transparent!important;color:#fff!important;border:2px solid rgba(255,255,255,.86)!important}
-.approved-hero-progress{display:flex;gap:11px;margin-top:15px;font-size:11px;color:#dcebf5}
-.approved-school-card{
-  position:absolute;z-index:4;right:22px;top:22px;width:325px;background:rgba(255,255,255,.96);backdrop-filter:blur(4px);
-  border:1px solid rgba(255,255,255,.75);border-radius:15px;padding:21px;box-shadow:0 12px 30px rgba(5,38,65,.19)
-}
-.approved-school-card-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
-.approved-school-card .pu-eyebrow{margin-bottom:4px}
-.approved-school-card h2{margin:0;color:#123b62;font-size:1.6rem;line-height:1.08}
-.change-school-inline{border:0;background:transparent;color:#1768a2;text-decoration:underline;font-size:10px;font-weight:850;padding:3px}
-.approved-school-context{color:#526c81;font-size:12px;margin-top:8px}
-.approved-rule{height:1px;background:#d7e1e8;margin:17px 0}
-.approved-program-label{font-size:9px;letter-spacing:.08em;color:#71889a;font-weight:900}
-.approved-program-type{color:#123b62;font-size:1.35rem;font-weight:950;margin:4px 0 15px}
-.approved-school-action{width:100%;border:1px solid #a9c8dd;background:#fff;color:#0d4f83;border-radius:9px;padding:11px;font-weight:900}
-.pu-choice-band{margin-top:18px!important}
-.site-help-panel{position:fixed;inset:0;z-index:1600;background:rgba(6,29,48,.46);display:grid;place-items:center;padding:20px}
-.site-help-panel[hidden]{display:none}
-.site-help-panel-inner{position:relative;max-width:520px;background:#fff;border-radius:16px;padding:28px;box-shadow:0 24px 80px rgba(6,29,48,.28)}
-.site-help-close{position:absolute;right:13px;top:10px;border:0;background:transparent;font-size:26px;color:#5c7182}
-.pu-cycle-visual img{max-width:155px!important}
-.pu-cycle-card{grid-template-columns:180px 1fr!important}
-.persistent-home-button{right:22px!important;bottom:22px!important}
-.back-link,.floating-back,.persistent-back-button,body button[onclick*="history.back"]{
-  position:static!important;right:auto!important;bottom:auto!important;left:auto!important;top:auto!important;
-  margin:0 0 16px!important;transform:none!important
-}
-@media(max-width:950px){
- .pu-header-nav{display:none}
- .pu-mobile-school-select{margin-left:auto}
- .approved-hero{min-height:620px!important}
- .approved-hero-bg{inset:0;background-position:center 35%}
- .approved-hero-shade{background:linear-gradient(180deg,rgba(9,61,102,.82) 0%,rgba(9,61,102,.78) 58%,rgba(9,61,102,.25) 100%)}
- .approved-hero-copy{width:100%;min-height:390px;padding:35px 24px 220px}
- .approved-school-card{left:20px;right:20px;top:auto;bottom:18px;width:auto}
-}
-@media(max-width:650px){
- .pu-site-header{height:auto!important;min-height:105px!important;align-items:flex-start!important;padding:14px 16px!important;flex-wrap:wrap}
- .pu-brand-title{font-size:16px}.pu-brand-subtitle{font-size:10px}
- .pu-mobile-school-select{width:100%;margin:0}.pu-mobile-school-select select{flex:1;min-width:0}
- .approved-hero{margin:10px 10px 0!important;border-radius:14px!important}
- .approved-hero-copy h1{font-size:2.65rem}
- .approved-hero-copy{padding-top:32px}
- .approved-hero-actions{display:grid}
- .approved-hero-actions button{width:100%}
- .approved-school-card h2{font-size:1.35rem}
-}
+/* v61 — direct implementation of the approved draft */
+body{background:#fff!important;color:#12365c!important}
+.app{display:block!important}.sidebar,.sidecol{display:none!important}.main{margin:0!important;max-width:none!important;padding:0!important}.content{display:block!important}
+.draft-header{height:82px;display:flex;align-items:center;justify-content:space-between;gap:26px;padding:0 3.2vw;border-bottom:1px solid #dbe5ee;background:#fff;position:sticky;top:0;z-index:100}
+.draft-brand{display:flex;align-items:center;gap:20px}.draft-grps{font-size:24px;font-weight:1000;color:#0d4d85;position:relative}.draft-grps span{position:absolute;width:5px;height:30px;background:#f36b21;border-radius:4px;right:-8px;top:-1px}
+.draft-brand strong{display:block;font-size:21px;color:#0a2f66}.draft-brand small{display:block;color:#426b95;font-size:12px;margin-top:4px}
+.draft-nav{display:flex;gap:22px}.draft-nav button{border:0;background:transparent;color:#082f69;font-weight:900;font-size:13px}.draft-nav button:first-letter{font-size:20px}
+.draft-school-select{display:flex;align-items:center;gap:8px}.draft-school-select label{font-size:9px;font-weight:900;text-transform:uppercase}.draft-school-select select{max-width:220px;border:1px solid #cbdbe8;background:#f4f8fb;border-radius:8px;padding:8px;font-weight:800;color:#143b62}
+.draft-home{display:block!important}
+.draft-hero{max-width:1480px;margin:14px auto 0;min-height:430px;border-radius:12px;overflow:hidden;background:linear-gradient(112deg,#0b4c82 0%,#0a3e70 58%,#0b3157 100%);display:grid;grid-template-columns:1fr 360px;gap:38px;padding:38px 38px 34px;position:relative}
+.draft-hero:after{content:"";position:absolute;right:29%;top:-60px;width:320px;height:560px;background:linear-gradient(150deg,rgba(255,255,255,.07),rgba(255,255,255,0));transform:skew(-16deg);pointer-events:none}
+.draft-hero-copy{color:#fff;max-width:720px;align-self:center;z-index:1}.draft-kicker{font-size:12px;letter-spacing:.1em;font-weight:950;color:#dceeff;margin:0 0 12px}
+.draft-hero h1{font-size:clamp(3.1rem,5vw,5.6rem);line-height:.96;letter-spacing:-.045em;margin:0 0 18px;color:#fff}.draft-hero h1 em{font-style:normal;color:#ff741c}
+.draft-lead{font-size:1.06rem;line-height:1.5;color:#f0f7fc;max-width:690px}.draft-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.draft-primary{border:0;background:#ff6715!important;color:#fff!important;border-radius:999px!important;padding:14px 21px!important;font-weight:950!important}
+.draft-outline{border:2px solid #fff!important;background:transparent!important;color:#fff!important;border-radius:999px!important;padding:12px 20px!important;font-weight:900!important}
+.draft-save{display:flex;gap:14px;font-size:11px;color:#d9e9f5;margin-top:15px}.draft-save strong{color:#fff}
+.draft-school-card{align-self:center;background:#fff;border-radius:14px;padding:24px;color:#12365c;z-index:2;box-shadow:0 12px 35px rgba(3,30,54,.22)}
+.draft-school-card-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.draft-school-card-top strong{font-size:14px}.draft-school-card-top button{border:0;background:transparent;color:#1768a2;text-decoration:underline;font-size:10px}
+.draft-school-card h2{font-size:1.75rem;margin:15px 0 4px;color:#0b3470}.draft-school-context{color:#426b95;font-size:13px}.draft-school-card hr{border:0;border-top:1px solid #b9d0e1;margin:17px 0}
+.draft-school-card small{color:#58748d}.draft-program{font-size:1.35rem;font-weight:950;color:#0b3470;margin:4px 0 13px}.draft-school-card>button{width:100%;border:1px solid #83b8e2;background:#fff;color:#0a3c79;border-radius:8px;padding:10px;margin-top:8px;font-weight:900}
+.draft-path{max-width:1480px;margin:14px auto 0;background:linear-gradient(90deg,#f3faff,#eef7ff);border-radius:12px;padding:22px 30px 26px}.draft-section-title h2{margin:0;color:#0b3470;font-size:2rem}.draft-section-title p{margin:2px 0 16px;color:#426b95}
+.draft-path-grid{display:grid;grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr;align-items:stretch}.draft-step{border-radius:10px;padding:18px 22px;text-align:center;background:#fff;min-height:220px;display:flex;flex-direction:column;border:1px solid}
+.draft-step.s1{border-color:#ffb77f;background:#fffaf5}.draft-step.s2{border-color:#9fcaf3;background:#f8fcff}.draft-step.s3{border-color:#a9ddbf;background:#f8fffb}.draft-step.s4{border-color:#d0b7f4;background:#fcf9ff}
+.draft-step-top{display:flex;justify-content:space-between;align-items:center}.draft-step-top span{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:950}.s1 .draft-step-top span{background:#ff8a3d;color:#fff}.s2 .draft-step-top span{background:#c7e4ff;color:#0868c4}.s3 .draft-step-top span{background:#bde9cb;color:#087c4a}.s4 .draft-step-top span{background:#e0c7ff;color:#6e22ce}
+.draft-step-top b{font-size:29px}.s1 .draft-step-top b,.s1 button{color:#ef5f13}.s2 .draft-step-top b,.s2 button{color:#0868c4}.s3 .draft-step-top b,.s3 button{color:#08a45f}.s4 .draft-step-top b,.s4 button{color:#7725df}
+.draft-step h3{font-size:1.2rem;margin:12px 0 7px;color:#0a2f66}.draft-step p{color:#466788;font-size:.9rem;line-height:1.35}.draft-step button{border:0;background:transparent;font-weight:950;margin-top:auto;font-size:.92rem}.draft-arrow{display:grid;place-items:center;font-size:44px;font-weight:300;color:#0a2f66}
+.draft-resources{max-width:1480px;margin:14px auto;display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:14px}.draft-resources>article{border:1px solid #d4e1eb;border-radius:12px;background:#fff;padding:20px}
+.draft-cycle{display:grid;grid-template-columns:245px 1fr;gap:20px;align-items:center}.draft-cycle img{width:100%;max-width:235px}.draft-cycle h2,.draft-links h2,.draft-tools h2{margin:0;color:#0b3470;font-size:1.55rem}.draft-cycle p,.draft-links>p,.draft-tools>p{color:#426b95;font-size:.88rem;line-height:1.45}
+.draft-cycle details{margin-top:15px}.draft-cycle summary{list-style:none;display:inline-block;background:#0868d1;color:#fff;border-radius:9px;padding:11px 16px;font-weight:900;cursor:pointer}.draft-cycle details p{background:#f4f8fb;padding:12px;border-radius:8px}
+.draft-links button,.draft-tools button{width:100%;position:relative;text-align:left;border:1px solid #cbdfee;background:#fff;border-radius:8px;padding:10px 32px 10px 12px;margin-top:7px;color:#0b3470}.draft-tools{background:#fffaf5!important;border-color:#f3d8c4!important}.draft-tools button{border-color:#f3d8c4}.draft-links button b,.draft-tools button b{display:block;font-size:.82rem}.draft-links button span,.draft-tools button span{display:block;font-size:.7rem;color:#58748d;margin-top:2px}.draft-links button i,.draft-tools button i{position:absolute;right:11px;top:50%;transform:translateY(-50%);font-style:normal;font-size:18px;color:#0868d1}
+.draft-footer-band{max-width:1480px;margin:0 auto;background:linear-gradient(90deg,#0a4c82,#073665);min-height:96px;color:#fff;display:flex;justify-content:flex-end;align-items:center;padding:18px 60px;border-radius:12px 12px 0 0}.draft-footer-band h2{font-size:2rem;margin:0}.draft-footer-band p{margin:2px 0}.draft-footer{max-width:1480px;margin:auto;display:flex;justify-content:space-between;padding:18px 28px;color:#0b3470;font-size:.75rem}
+.draft-help{position:fixed;inset:0;background:rgba(4,30,53,.5);z-index:2000;display:grid;place-items:center}.draft-help[hidden]{display:none}.draft-help>div{position:relative;background:#fff;border-radius:14px;padding:28px;max-width:520px}.draft-help>div>button:first-child{position:absolute;right:12px;top:8px;border:0;background:transparent;font-size:25px}
+.persistent-home-button{position:fixed!important;right:22px!important;bottom:22px!important;z-index:1200!important;background:#0a4c82!important;border:3px solid #fff!important}
+.back-link,.floating-back,.persistent-back-button,body button[onclick*="history.back"]{position:static!important;right:auto!important;bottom:auto!important;left:auto!important;top:auto!important;transform:none!important;margin:0 0 14px!important}
+.cna-hub{max-width:1320px!important;margin:42px auto!important}
+body.non-title-i .draft-step.s2,body.non-title-i .draft-step.s3,body.non-title-i .draft-step.s4{opacity:.42;pointer-events:none}
+@media(max-width:1050px){.draft-nav{display:none}.draft-hero{margin:10px;grid-template-columns:1fr}.draft-school-card{max-width:520px}.draft-path,.draft-resources{margin:10px}.draft-path-grid{grid-template-columns:1fr 20px 1fr}.draft-path-grid .draft-arrow:nth-of-type(4),.draft-path-grid .draft-arrow:nth-of-type(6){display:none}.draft-resources{grid-template-columns:1fr}.draft-cycle{grid-template-columns:190px 1fr}}
+@media(max-width:680px){.draft-header{height:auto;min-height:108px;flex-wrap:wrap;padding:12px 16px}.draft-brand strong{font-size:16px}.draft-brand small{font-size:9px}.draft-school-select{width:100%}.draft-school-select select{flex:1;max-width:none}.draft-hero{padding:26px 20px}.draft-hero h1{font-size:3rem}.draft-actions{display:grid}.draft-path{padding:20px}.draft-path-grid{grid-template-columns:1fr;gap:10px}.draft-arrow{display:none!important}.draft-cycle{grid-template-columns:1fr}.draft-cycle img{max-width:190px;margin:auto}.draft-footer-band{margin:10px;padding:24px}.draft-footer{margin:0 10px;display:block}.draft-footer span{display:block;margin-top:8px}}
 
 </style>
 </head>
@@ -1470,24 +1420,18 @@ body button[onclick*="history.back"]{position:static!important;right:auto!import
 
   <main class="main">
     
-<header class="topbar pu-site-header">
-  <div class="pu-brand-lockup">
-    <div class="pu-brand-mark" aria-hidden="true">GRPS</div>
-    <div>
-      <div class="pu-brand-title">School Needs &amp; Title I Planning</div>
-      <div class="pu-brand-subtitle">Understand Today. Plan What Matters Next.</div>
-    </div>
+<header class="draft-header">
+  <div class="draft-brand">
+    <div class="draft-grps">GRPS<span></span></div>
+    <div><strong>School Needs &amp; Title I Planning</strong><small>Understand Today. Plan What Matters Next.</small></div>
   </div>
-  <nav class="pu-header-nav" aria-label="Primary">
-    <button type="button" onclick="show('home')"><span>⌂</span> Home</button>
-    <button type="button" onclick="document.getElementById('resourcesSection')?.scrollIntoView({behavior:'smooth'})"><span>▤</span> Resources</button>
-    <button type="button" onclick="showHelpPanel()"><span>?</span> Help</button>
-    <button type="button" onclick="show('finalPlan')"><span>◉</span> My Plan</button>
+  <nav class="draft-nav">
+    <button onclick="show('home')" type="button">⌂ <span>Home</span></button>
+    <button onclick="document.getElementById('quickLinks')?.scrollIntoView({behavior:'smooth'})" type="button">▤ <span>Resources</span></button>
+    <button onclick="showDraftHelp()" type="button">? <span>Help</span></button>
+    <button onclick="show('finalPlan')" type="button">♙ <span>My Plan</span></button>
   </nav>
-  <div class="pu-mobile-school-select">
-    <label for="schoolSelect">School</label>
-    <select id="schoolSelect" aria-label="Select school">
-      
+  <div class="draft-school-select"><label>School</label><select id="schoolSelect">
 <option value="">Select school</option>
 <option>Aberdeen Academy</option>
 <option>Blandford School</option>
@@ -1533,9 +1477,7 @@ body button[onclick*="history.back"]{position:static!important;right:auto!import
 <option>Union High School</option>
 <option>Westwood Middle School</option>
 <option>Zoo School</option>
-
-    </select>
-  </div>
+</select></div>
 </header>
 
       <div class="school-card">
@@ -1549,140 +1491,74 @@ body button[onclick*="history.back"]{position:static!important;right:auto!import
       <section>
         
 
-<div id="home" class="view active pu-home">
-  
-<section class="pu-hero approved-hero">
-  <div class="approved-hero-bg" role="img" aria-label="GRPS scholars and classroom activity" style="background-image:url('https://grps-cdn.fxbrt.com/downloads/_photogalleries_/672e522074d64586955e42ef205277cb.jpg')"></div>
-  <div class="approved-hero-shade"></div>
 
-  <div class="approved-hero-copy">
-    <p class="pu-eyebrow light">STRONGER SCHOOLS. BRIGHTER FUTURES.</p>
-    <h1>Start with what <span>your school needs.</span></h1>
-    <p>Use school data, local evidence, and staff, family, and scholar perspectives to identify the few needs that will make the greatest impact.</p>
-    <div class="approved-hero-actions">
-      <button id="homePrimaryAction" class="pu-primary-btn" type="button" onclick="openPrimaryWorkflow()">Start Your Comprehensive Needs Assessment →</button>
-      <button class="pu-secondary-btn hero-secondary" type="button" onclick="show('sample')">▤ View a Completed Example</button>
+<div id="home" class="view active draft-home">
+  <section class="draft-hero">
+    <div class="draft-hero-copy">
+      <p class="draft-kicker">STRONGER SCHOOLS. BRIGHTER FUTURES.</p>
+      <h1>Start with what <em>your school needs.</em></h1>
+      <p class="draft-lead">Use school data, local evidence, and staff, family, and scholar perspectives to identify the few needs that will make the greatest impact.</p>
+      <div class="draft-actions">
+        <button id="homePrimaryAction" class="draft-primary" type="button" onclick="openPrimaryWorkflow()">Start Your Comprehensive Needs Assessment →</button>
+        <button class="draft-outline" type="button" onclick="show('sample')">▤ &nbsp; View a Completed Example</button>
+      </div>
+      <div class="draft-save"><strong id="homeCNAProgress">0 of 4 data types reviewed</strong><span>Your work saves automatically.</span></div>
     </div>
-    <div class="approved-hero-progress">
-      <strong id="homeCNAProgress">0 of 4 data types reviewed</strong>
-      <span>Your work saves automatically.</span>
-    </div>
-  </div>
+    <aside class="draft-school-card">
+      <div class="draft-school-card-top"><strong>♜ &nbsp; Your School</strong><button onclick="document.getElementById('schoolSelect').focus()" type="button">Change School</button></div>
+      <h2 id="homeSchoolName">Select school</h2>
+      <div id="homeSchoolContext" class="draft-school-context">2026–27</div>
+      <hr>
+      <small>Title I Program Type</small>
+      <div id="homeProgramMessage" class="draft-program">Select a school to begin</div>
+      <button onclick="openPrimaryWorkflow()" type="button">▤ &nbsp; Open CNA Workspace</button>
+      <button onclick="document.getElementById('schoolSelect').focus()" type="button">⇄ &nbsp; Change School</button>
+    </aside>
+  </section>
 
-  <aside class="approved-school-card">
-    <div class="approved-school-card-head">
+  <section class="draft-path">
+    <div class="draft-section-title"><h2>Your Planning Path</h2><p>A simple 4-step process. Enter the need once and use it throughout the plan.</p></div>
+    <div class="draft-path-grid">
+      <article class="draft-step s1"><div class="draft-step-top"><span>01</span><b>▥</b></div><h3>Understand Need</h3><p>Complete the Comprehensive Needs Assessment (CNA) and identify your top needs.</p><button onclick="openPrimaryWorkflow()">Start CNA →</button></article>
+      <div class="draft-arrow">›</div>
+      <article class="draft-step s2"><div class="draft-step-top"><span>02</span><b>▣</b></div><h3>Build Plan</h3><p>Develop your Schoolwide or Targeted Assistance Title I Plan based on your needs.</p><button onclick="show('planBuilder')">Build Your Plan →</button></article>
+      <div class="draft-arrow">›</div>
+      <article class="draft-step s3"><div class="draft-step-top"><span>03</span><b>▤</b></div><h3>Documents</h3><p>Create and upload required documents such as the Parent Plan and Compact.</p><button onclick="show('req8')">Manage Documents →</button></article>
+      <div class="draft-arrow">›</div>
+      <article class="draft-step s4"><div class="draft-step-top"><span>04</span><b>♟</b></div><h3>Review</h3><p>Check for completion, review the compliance crosswalk, and finalize.</p><button onclick="show('crosswalk')">Review &amp; Finalize →</button></article>
+    </div>
+  </section>
+
+  <section class="draft-resources" id="quickLinks">
+    <article class="draft-cycle">
+      <img src="assets/continuous-improvement-cycle.png" alt="Continuous Improvement Cycle: Assess Needs, Plan, Implement, Monitor, and Evaluate">
       <div>
-        <p class="pu-eyebrow">YOUR SCHOOL</p>
-        <h2 id="homeSchoolName">Select school</h2>
+        <h2>Our Continuous<br>Improvement Cycle</h2>
+        <p>Title I planning is part of GRPS's continuous improvement cycle. We assess needs, plan, implement, monitor, and evaluate to create stronger schools and better outcomes for all scholars.</p>
+        <details><summary>Learn More About the Cycle →</summary><p><strong>Assess Needs</strong> identifies priorities. <strong>Plan</strong> connects strategies to those needs. <strong>Implement</strong> puts the work into practice. <strong>Monitor</strong> checks progress. <strong>Evaluate</strong> determines what should continue, change, or stop.</p></details>
       </div>
-      <button type="button" class="change-school-inline" onclick="document.getElementById('schoolSelect').focus()">Change School</button>
-    </div>
-    <div id="homeSchoolContext" class="approved-school-context">2026–27</div>
-    <div class="approved-rule"></div>
-    <div class="approved-program-label">TITLE I PROGRAM TYPE</div>
-    <div id="homeProgramMessage" class="approved-program-type">Select a school to begin</div>
-    <button type="button" class="approved-school-action" onclick="openPrimaryWorkflow()">Open CNA Workspace →</button>
-  </aside>
-</section>
-
-
-  <section class="pu-choice-band">
-    <div class="pu-section-head">
-      <div>
-        <p class="pu-eyebrow">YOUR PLANNING PATH</p>
-        <h2>Know where you are. Know what comes next.</h2>
-      </div>
-      <p>The system carries your work forward so schools do not have to enter the same information again.</p>
-    </div>
-    <div class="pu-choice-grid">
-      <article class="pu-choice-card active">
-        <span class="num">01</span>
-        <h3>Understand Need</h3>
-        <p>Review four types of data, identify patterns, write needs, and determine priorities.</p>
-        <button type="button" onclick="openPrimaryWorkflow()">Start / Continue CNA →</button>
-      </article>
-      <article class="pu-choice-card">
-        <span class="num">02</span>
-        <h3>Build Plan</h3>
-        <p>Use CNA priorities to shape the strategies, supports, services, and monitoring in the plan.</p>
-        <button type="button" onclick="show('planBuilder')">Open Plan Builder →</button>
-      </article>
-      <article class="pu-choice-card">
-        <span class="num">03</span>
-        <h3>Documents</h3>
-        <p>Complete or upload required family engagement documents and supporting materials.</p>
-        <button type="button" onclick="show('req8')">Open Documents →</button>
-      </article>
-      <article class="pu-choice-card">
-        <span class="num">04</span>
-        <h3>Review</h3>
-        <p>Check readiness, review the compliance crosswalk, and prepare the completed plan.</p>
-        <button type="button" onclick="show('crosswalk')">Review Plan →</button>
-      </article>
-    </div>
+    </article>
+    <article class="draft-links">
+      <h2>🔗 Quick Links</h2><p>Helpful resources to support your planning work.</p>
+      <button onclick="openPrimaryWorkflow()"><b>▥ School Data</b><span>Enrollment, attendance, assessment data and more.</span><i>→</i></button>
+      <button onclick="show('req8')"><b>♟ Family &amp; Community Resources</b><span>Strategies and supports for families.</span><i>→</i></button>
+      <button onclick="show('crosswalk')"><b>▣ Federal Requirements</b><span>Plain-language guidance and key links.</span><i>→</i></button>
+      <button onclick="show('sample')"><b>◉ Tools &amp; Templates</b><span>Ready-to-use planning templates and examples.</span><i>→</i></button>
+    </article>
+    <article class="draft-tools">
+      <h2>★ Tools for Impact</h2><p>Additional resources to help you plan, connect, and take action.</p>
+      <button onclick="openPrimaryWorkflow()"><b>◎ Identify Root Causes</b><span>Use data and input to get to the why.</span><i>→</i></button>
+      <button onclick="show('req8')"><b>♟ Find Partners</b><span>Connect with GRPS and community supports.</span><i>→</i></button>
+      <button onclick="show('smartConnections')"><b>⚙ Turn Ideas Into Action</b><span>Connect priorities to strategies and requirements.</span><i>→</i></button>
+      <button onclick="show('crosswalk')"><b>★ Celebrate Progress</b><span>Review completion and what is working.</span><i>→</i></button>
+    </article>
   </section>
 
-  <section class="pu-dashboard" id="resourcesSection">
-    <div class="pu-dashboard-shell">
-      <div class="pu-dashboard-head">
-        <div>
-          <p class="pu-eyebrow">YOUR PLANNING DASHBOARD</p>
-          <h2>Pick up where you left off.</h2>
-          <p>Use these shortcuts for the work schools return to most.</p>
-        </div>
-        <div class="pu-year-badge">2026–27</div>
-      </div>
-      <div class="pu-dashboard-grid">
-        <button type="button" onclick="openPrimaryWorkflow()"><div class="pu-icon">4</div><strong>Review the four data types</strong><span>Demographic, achievement/outcome, process, and perception.</span><b>OPEN CNA →</b></button>
-        <button type="button" onclick="show('smartConnections')"><div class="pu-icon">↔</div><strong>Connect needs to Title I</strong><span>See how selected priorities connect to planning requirements.</span><b>SMART CONNECTIONS →</b></button>
-        <button type="button" onclick="show('req8')"><div class="pu-icon">D</div><strong>Family engagement documents</strong><span>Create or upload the Parent Plan and School-Parent Compact.</span><b>OPEN DOCUMENTS →</b></button>
-        <button type="button" onclick="show('crosswalk')"><div class="pu-icon">✓</div><strong>Check plan readiness</strong><span>See what is complete and what still needs attention.</span><b>REVIEW →</b></button>
-      </div>
-      <div id="homeNextStep" class="pu-next-step" hidden></div>
-    </div>
-  </section>
+  <section class="draft-footer-band"><div class="draft-city-shape"></div><div><h2>People. Programs. Possibilities.</h2><p>Partnering for stronger schools and brighter futures.</p></div></section>
+  <footer class="draft-footer"><strong>GRPS</strong><span>Accessibility &nbsp; | &nbsp; Privacy &nbsp; | &nbsp; Contact &nbsp; | &nbsp; grps.org</span></footer>
 
-  
-<section class="pu-cycle-section" id="continuousImprovement">
-  <div class="pu-cycle-card">
-    <div class="pu-cycle-visual"><img src="assets/continuous-improvement-cycle.png" alt="GRPS Continuous Improvement Cycle showing Assess Needs, Plan, Implement, Monitor, and Evaluate"></div><div class="pu-cycle-copy">
-      <p class="pu-eyebrow">CONTINUOUS IMPROVEMENT</p>
-      <h2>This work is part of a larger cycle.</h2>
-      <p>The CNA begins with <strong>Assess Needs</strong>. The priorities identified here should carry into planning, implementation, monitoring, and evaluation—not sit in a separate document.</p>
-      <details class="pu-cycle-more">
-        <summary>Learn more about the Continuous Improvement Cycle</summary>
-        <div>
-          <p><strong>Assess Needs:</strong> Use multiple sources of evidence to identify the most important school needs.</p>
-          <p><strong>Plan:</strong> Select strategies and supports that directly respond to the identified needs.</p>
-          <p><strong>Implement:</strong> Put the plan into practice with clear ownership, resources, and expectations.</p>
-          <p><strong>Monitor:</strong> Check implementation and interim evidence so the team can adjust while the work is underway.</p>
-          <p><strong>Evaluate:</strong> Determine what changed, what worked, and what should continue, change, or stop.</p>
-        </div>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section class="pu-promise-band">
-    <div>
-      <p class="pu-eyebrow light">ONE CONNECTED PROCESS</p>
-      <h2>Enter the need once. Use it throughout the plan.</h2>
-      <p>Your CNA priorities carry forward into Title I planning, documents, monitoring, and final review.</p>
-    </div>
-    <div class="pu-promise-stats">
-      <div><strong>4</strong><span>data types</span></div>
-      <div><strong>2–4</strong><span>focused priorities</span></div>
-      <div><strong>1</strong><span>connected plan</span></div>
-    </div>
-  </section>
-
-  <div class="sr-only">
-    <div id="homeReadiness"></div><span id="resumeTitle"></span><span id="resumeText"></span>
-    <button id="resumeButton" type="button" tabindex="-1"></button><span id="schoolDataToggleText"></span>
-    <div id="schoolMetricGrid"></div><div id="schoolPublicData"></div>
-  </div>
+  <div class="sr-only"><div id="homeReadiness"></div><span id="resumeTitle"></span><span id="resumeText"></span><button id="resumeButton" tabindex="-1"></button><span id="schoolDataToggleText"></span><div id="schoolMetricGrid"></div><div id="schoolPublicData"></div><div id="homeNextStep"></div></div>
 </div>
-
 <div id="cnaHub" class="view panel cna-hub">
   <button class="back-link" type="button" onclick="show('home')">← Home</button>
   <div class="cna-hub-head">
@@ -3260,7 +3136,7 @@ function refreshWorkflowHome(){
     ctx.textContent=['2026–27',type!=='Program Type Not Loaded'?type:'',meta].filter(Boolean).join(' · ');
   }
   if(msg){
-    msg.className='pu-program-pill';
+    msg.className='draft-program';
     msg.textContent=type==='No Title I Funds'?'CNA only • No Title I plan required':
       type==='Targeted Assistance'?'Title I • Targeted Assistance':
       type==='Schoolwide'?'Title I • Schoolwide':'Select a school to begin';
@@ -3289,11 +3165,9 @@ function openPrimaryWorkflow(){
 
 setTimeout(refreshWorkflowHome,50);
 
-function showHelpPanel(force){
-  const p=document.getElementById('siteHelpPanel');
-  if(!p)return;
-  const shouldShow=(typeof force==='boolean')?force:p.hidden;
-  p.hidden=!shouldShow;
+function showDraftHelp(force){
+ const p=document.getElementById('draftHelp'); if(!p)return;
+ const open=(typeof force==='boolean')?force:p.hidden; p.hidden=!open;
 }
 
 </script>
@@ -3304,15 +3178,7 @@ function showHelpPanel(force){
 
 
 
-<div id="siteHelpPanel" class="site-help-panel" hidden>
-  <div class="site-help-panel-inner">
-    <button class="site-help-close" type="button" onclick="showHelpPanel(false)">×</button>
-    <p class="pu-eyebrow">HELP</p>
-    <h2>Where should I start?</h2>
-    <p>Start with the Comprehensive Needs Assessment. Review the four data types, identify needs and root causes, then select the few priorities that should carry into the plan.</p>
-    <button class="pu-primary-btn" type="button" onclick="showHelpPanel(false);openPrimaryWorkflow()">Go to the CNA →</button>
-  </div>
-</div>
+<div id="draftHelp" class="draft-help" hidden><div><button onclick="showDraftHelp(false)">×</button><p class="draft-kicker">HELP</p><h2>Where should I start?</h2><p>Begin with the Comprehensive Needs Assessment. Review the four data types, identify needs and root causes, then select the few priorities that should carry into the plan.</p><button class="draft-primary" onclick="showDraftHelp(false);openPrimaryWorkflow()">Go to the CNA →</button></div></div>
 
 </body>
 </html>
