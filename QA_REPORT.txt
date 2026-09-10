@@ -1,16 +1,20 @@
-GRPS School Needs & Title I Planning v59 — BUILD QA
+GRPS School Needs & Title I Planning v60 — TOP SECTION + CYCLE BUILD QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Parent University structure retained: PASS
-Continuous Improvement section added: PASS
-Cycle is secondary/not dominant: PASS
-Cycle has expandable additional information: PASS
-Single persistent Home button: PASS
+Approved header structure present: PASS
+Top nav Home Resources Help My Plan: PASS
+Approved image-led hero present: PASS
+Real GRPS-hosted photo URL used: PASS
+School card overlays hero: PASS
+School selector retained: PASS
+Exact user Continuous Improvement image used: PASS
+Cycle visually secondary: PASS
+Single fixed Home button: PASS
 Back controls forced into flow: PASS
-Automated Title I routing retained: PASS
-Blandford no-Title-I behavior retained: PASS
+Parent University pathway retained: PASS
+Resources dashboard retained: PASS
+Automated program routing retained: PASS
+Blandford CNA-only routing retained: PASS
 Smart Connections retained: PASS
-Requirement 8 workspace retained: PASS
-Hyperlink support retained: PASS
-User Continuous Improvement image packaged: PASS
+Global hyperlink support retained: PASS
