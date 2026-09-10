@@ -1,18 +1,12 @@
-GRPS Title I Plan v49 — EDITABLE PARENT PLAN + UPLOAD QA
+GRPS Title I Plan v50 — MAJOR DESIGN REVISION QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Editable Parent Plan builder: PASS
-Parent Plan upload: PASS
-School Compact upload: PASS
-IndexedDB file persistence: PASS
-School/year scoped uploads: PASS
-Reopen uploaded files: PASS
-Parent Plan completion validation: PASS
-Print/save Parent Plan: PASS
-MDE template browser viewer: PASS
-Compact clearly sample: PASS
+Five-stage sidebar: PASS
+Plan Builder hub: PASS
+Requirements grouped: PASS
+Single home continue: PASS
+Requirement 8 editor retained: PASS
+Uploads retained: PASS
 Smart Connections retained: PASS
-Compliance Crosswalk retained: PASS
-
-Hosting note: GitHub Pages is static. Uploaded files are stored locally in the browser via IndexedDB, scoped to the selected school/year; they are not centrally submitted to GRPS.
+Crosswalk retained: PASS
