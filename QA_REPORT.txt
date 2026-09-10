@@ -1,12 +1,19 @@
-GRPS Title I Plan v53 — HOME BUTTON QA
+GRPS School Needs & Title I Planning v56 — WORKFLOW REDESIGN QA
 
 JavaScript syntax: PASS
 No duplicate IDs: PASS
-Persistent Home button exists: PASS
-Home button routes to Home: PASS
-Bottom-right desktop placement: PASS
-Mobile compact Home button: PASS
-Hidden when printing: PASS
-Automated Title I program type retained: PASS
-Global hyperlink support retained: PASS
-Parent Plan editor retained: PASS
+New universal site title: PASS
+Legacy sidebar hidden: PASS
+Four-step workflow: PASS
+Minimal home primary card: PASS
+CNA workspace created: PASS
+School starting data moved into CNA workspace: PASS
+Four data type launcher moved into CNA workspace: PASS
+Non-Title I CNA-only message: PASS
+Schoolwide routing message: PASS
+Targeted routing message: PASS
+Home button retained: PASS
+Automated program classifications retained: PASS
+Global hyperlinks retained: PASS
+Smart Connections retained: PASS
+Requirement 8 retained: PASS
